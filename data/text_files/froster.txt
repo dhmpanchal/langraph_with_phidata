@@ -1,0 +1,1254 @@
+Miss <first_name> <middle_name> <last_name>
+Patient Summary: Virtual Pharmacist (Test)
+Miss <first_name> <middle_name> <last_name>	NHS Number: <NHS>
+	Date of Birth	<DOB> 	Gender	<gender>
+	Language	Main spoken language English (XaG5t)	English Speaker	Yes
+Contact Details
+	Current Home Address	<address>	28 Jan 2025 - 
+	Mobile Tel. (preferred)	<phone_number>
+	Home Tel.	<phone_number>, Amendment via PDS
+	Alternate Tel.	<phone_number>
+	Previous Home Address	<address>	29 May 2018 - 28 Jan 2025
+Registration Details
+	Usual GP	Dr Philip Williams	Home GP	
+	PDS Registered Practice	Disney Medical Practice (NHS Lincolnshire Icb - 71e) (01522 751717)
+	Usual Branch	Disney Medical Practice (01522 751717)
+
+All Reminders
+03 Jul 2018	This patient is newly registered here, make sure that patient data already on the system has been checked for conformity to policy.	Normal Priority	
+03 Jul 2018	<last_name> CHILD 
+ONLY SPEAK TO <last_name> PARENTS - <parent_first_name> <parent_last_name>    <parent_contact_number>    / <parent_first_name> <parent_last_name>    <parent_contact_number>	High Priority	
+18 Mar 2019	CAUTION: Excessive third party references in Safeguarding documents dating back to 2009	Normal Priority	
+28 Jan 2025	This patient is newly registered here, make sure that patient data already on the system has been checked for conformity to policy.	Normal Priority	
+06 Feb 2025	Looked after Child - Funded by External Local Authority	High Priority	
+Appointments	4 (4)
+Attendances	4 (4)          100% (100%)
+DNAs	0 (0)          0% (0%)
+Visits	0 (0)          0% (0%)
+
+All Blood Pressure Recordings
+15 Feb 2016	132 / 60	
+22 Feb 2016	135 / 70	
+01 Apr 2016 00:00	100 / 70	
+09 Jun 2016	90 / 60	
+02 Jun 2021	107 / 47	
+01 Aug 2023	105 / 73	
+06 Mar 2024	122 / 61	
+19 Mar 2024	110 / 67	
+23 Sep 2024	118 / 62	
+23 Sep 2024	101 / 53	
+24 Oct 2024	119 / 74	
+
+All Family History
+CS = Chronic Summary      MS = Major Summary      OS = Minor Summary      S = Unspecified Summary      NE = New Episode      OE = Ongoing Episode
+08 Feb 2013	FH: Diabetes mellitus (1252.)		
+05 Feb 2017	FH: Ischaemic heart disease at less than 60 years (XE0oG)		
+	Original text: FH: Ischaemic heart dis. <60 
+Subject: Paternal grandmother
+02 Jun 2021	FH: Ischaemic heart disease at less than 60 years (XE0oG)		
+	Original text: FH: Ischaemic heart dis. <60
+
+All medication
+A = Acute      P = Private      I = Dispensed      D = Dental      H = Hospital      O = Other
+27 Apr 2021	AeroChamber Plus with child mask (Trudell Medical UK Ltd)	As Directed	1 device	A
+27 Apr 2021	Ventolin 100micrograms/dose Evohaler (GlaxoSmithKline UK Ltd)	2 PUFF(S) FOUR TIMES A DAY (BLUE RELIEVER)	200 dose	A
+11 May 2021	Hyoscine butylbromide 10mg tablets	upto 1 tid	10 tablet	A
+11 May 2021	Ventolin 100micrograms/dose Evohaler (GlaxoSmithKline UK Ltd)	2 PUFF(S) FOUR TIMES A DAY (BLUE RELIEVER)	200 dose	A
+02 Jun 2021	Ventolin 100micrograms/dose Evohaler (GlaxoSmithKline UK Ltd)	2 PUFF(S) FOUR TIMES A DAY (BLUE RELIEVER)	400 dose	A
+22 Jun 2021	Volumatic (GlaxoSmithKline UK Ltd)	TO USE WITH INHALER	1 device	A
+13 Jul 2021	Ventolin 100micrograms/dose Evohaler (GlaxoSmithKline UK Ltd)	2 PUFF(S) FOUR TIMES A DAY (BLUE RELIEVER)	400 dose	A
+13 Nov 2021	Comirnaty COVID-19 mRNA Vaccine 30micrograms/0.3ml dose concentrate for dispersion for injection multidose vials (Pfizer Ltd)	0.3 Milliliter (qualifier value) by Intramuscular Injection	0.3 Milliliter (qualifier value)	A
+31 Aug 2022	Chlorphenamine 2mg/5ml oral solution	One 5ml Spoonful Every Four To Six Hours (Maximum 6 Doses Each Day)	150 ml	A
+	Ended early on 29 Sep 2022: Other (Medication Course Ended. Expired)
+05 Sep 2022	Comirnaty COVID-19 mRNA Vaccine 30micrograms/0.3ml dose concentrate for dispersion for injection multidose vials (Pfizer Ltd)	0.3 ml Intramuscular	0.3 ml	A
+	Ended early on 20 Sep 2023: Other (Medication Course Ended. Expired)
+18 Mar 2024	SunVit-D3 10,000unit capsules (SunVit-D3 Ltd)	One daily for 8 weeks then change to the maintenance dose	56 capsule	A
+	Ended early on 12 Apr 2024: Other (Medication Course Ended)
+12 Apr 2024	InVita D3 25,000units/1ml oral solution (Consilient Health Ltd)	Give 3 ampoules at the same time once per week for 7 weeks	21 ampoule	A
+21 Jun 2024	Cyclizine 50mg tablets	One To Be Taken Up To Three Times A Day	30 tablet	A
+02 Jul 2024	Cyclizine 50mg tablets	One To Be Taken Up To Three Times A Day	30 tablet	A
+	Ended early on 31 Jul 2024: Other (Medication Course Ended. Expired)
+12 Jul 2024	Ensure Compact Starter Pack liquid (Abbott Laboratories Ltd)	One daily	3500 ml	
+23 Jul 2024	Ensure Plus Juce liquid (Flavour Not Specified)	strawberry and banana flavours, take each once daily	6600 ml	A
+23 Jul 2024	Gaviscon Advance oral suspension peppermint (Reckitt Benckiser Healthcare (UK) Ltd)	One Or Two 5ml Spoonfuls To Be Taken After Meals And At Bedtime	500 ml	A
+23 Aug 2024	Ensure Plus Juce liquid (Flavour Not Specified)	strawberry and peach flavours, take each once daily	6600 ml	A
+	Ended early on 30 Sep 2024: Other (Medication Course Ended)
+23 Aug 2024	Gaviscon Advance oral suspension peppermint (Reckitt Benckiser Healthcare (UK) Ltd)	One Or Two 5ml Spoonfuls To Be Taken After Meals And At Bedtime	500 ml	A
+	Ended early on 05 Oct 2024: Other (Medication Course Ended. Expired)
+12 Sep 2024	Promethazine hydrochloride 25mg tablets	One To Be Taken At Night	28 tablet	A
+23 Sep 2024	Sertraline 50mg tablets	Half daily	14 tablet	A
+	Ended early on 28 Oct 2024: Other (Medication Course Ended. Restarted as non-hospital.)
+30 Sep 2024	Fortisip PlantBased 1.5kcal liquid (Flavour Not Specified)	One daily (mixed flavours) as per dietician advice	5600 ml	A
+	Ended early on 11 Nov 2024: Other (Medication Course Ended)
+07 Oct 2024	Sertraline 50mg tablets	One To Be Taken Each Day	28 tablet	A
+11 Nov 2024	Fortisip PlantBased 1.5kcal liquid mocha (Nutricia Ltd)	One daily as per dietician advice	5600 ml	A
+	Ended early on 24 Dec 2024: Other (Medication Course Ended. Expired)
+18 Feb 2025	Sertraline 50mg tablets	one a day	28 tablet	
+10 Mar 2025	Cyclizine 50mg tablets	1 tablet three times daily	30 tablet	H
+10 Mar 2025	Dioralyte oral powder sachets blackcurrant (Dendron Brands Ltd)	take one as needed	20 sachet	H
+10 Mar 2025	Lansoprazole 30mg gastro-resistant capsules	take one once daily	28 capsule	H
+14 Mar 2025	Sertraline 50mg tablets	one a day	28 tablet	
+14 Mar 2025	Cyclizine 50mg tablets	1 tablet three times daily	30 tablet	A
+28 Mar 2025	Cyclizine 50mg tablets	1 tablet three times daily	30 tablet	A
+08 Apr 2025	Sertraline 50mg tablets	one a day	28 tablet	
+11 Apr 2025	Cyclizine 50mg tablets	1 tablet twice a day	30 tablet	A
+	Script notes: can increase to 50 mg up to 3 times a day
+
+All repeat templates
+12 Jul 2024	Ensure Compact Starter Pack liquid (Abbott Laboratories Ltd)	One daily	3500 ml	12 Jul 2024, Ended
+	Issues: 1	End Reason: Other (Medication Course Ended)
+12 Feb 2025	Sertraline 50mg tablets	one a day	28 tablet	08 Apr 2025
+	Issues: 3	Review: 12 Feb 2026
+
+All Drug Sensitivities
+No information recorded
+
+All pathology reports
+13 Mar 2024	
+	Message	Report ID: 15761686 
+Specimen ID: 24B00061092 
+Specimen description: TYPE UNSPECIFIED	
+	Result Indicator	Unknown	
+	Follow Up Action	Other	
+	Result Filed	Mrs Allie Weaving-Gomez	
+	Patient Informed	Patient does not need to be informed	
+	Report Archived		
+	Specimen Collected	13 Mar 2024 19:20	
+	Textual Investigations	 
+CLINICAL DETAILS:	
+13 Mar 2024	BONE PROFILE, GFR, LIVER FUNCTION TEST, UREA, CREAT + ELECTROLYTES
+	Message	Report ID: 15767653 
+Specimen ID: 24B00061092 
+Specimen description: TYPE UNSPECIFIED	
+	Result Indicator	Abnormal	
+	Follow Up Action	Other	
+	Result Filed	Mrs Allie Weaving-Gomez	
+	Patient Informed	Patient does not need to be informed	
+	Report Archived		
+	Specimen Collected	13 Mar 2024 19:20	
+	Textual Investigations	 
+CLINICAL DETAILS:	
+13 Mar 2024	
+	Message	Report ID: 15768872 
+Specimen ID: 24B00061092 
+Specimen description: TYPE UNSPECIFIED	
+	Result Indicator	Unknown	
+	Follow Up Action	Other	
+	Result Filed	Mrs Allie Weaving-Gomez	
+	Patient Informed	Patient does not need to be informed	
+	Report Archived		
+	Specimen Collected	13 Mar 2024 19:20	
+	Textual Investigations	 
+CLINICAL DETAILS:	
+13 Mar 2024	FULL BLOOD COUNT
+	Message	Report ID: 15765767 
+Specimen ID: 24B00061092 
+Specimen description: TYPE UNSPECIFIED	
+	Result Indicator	Abnormal	
+	Follow Up Action	Other	
+	Result Filed	Mrs Allie Weaving-Gomez	
+	Patient Informed	Patient does not need to be informed	
+	Report Archived		
+	Specimen Collected	13 Mar 2024 19:20	
+	Textual Investigations	 
+CLINICAL DETAILS:	
+14 Mar 2024	B12 & FOLATE, TRANSFERRIN SATURATION, TSH
+	Message	Report ID: 15892067 
+Specimen ID: 24B00061092 
+Specimen description: TYPE UNSPECIFIED	
+	Result Indicator	Abnormal	
+	Follow Up Action	Other	
+	Result Filed	Mrs Allie Weaving-Gomez	
+	Patient Informed	Patient does not need to be informed	
+	Report Archived		
+	Specimen Collected	13 Mar 2024 19:20	
+	Textual Investigations	 
+CLINICAL DETAILS:	
+28 Mar 2024	Tissue transglutaminase IgA level
+	Message	Report ID: 19940175 
+Specimen ID: 24B00167271 
+Specimen description: TYPE UNSPECIFIED	
+	Result Indicator	Unknown	
+	Follow Up Action	Other	
+	Result Filed	Mrs Allie Weaving-Gomez	
+	Patient Informed	Patient does not need to be informed	
+	Report Archived		
+	Specimen Collected	27 Mar 2024 11:32	
+	Textual Investigations	 
+CLINICAL DETAILS: 
+    low weight	
+02 Jul 2024	Serum vitamin D
+	Message	Report ID: 47544257 
+Specimen ID: 24B00914923 
+Specimen description: TYPE UNSPECIFIED	
+	Result Indicator	Unknown	
+	Follow Up Action	Other	
+	Result Filed	Mrs Allie Weaving-Gomez	
+	Patient Informed	Patient does not need to be informed	
+	Report Archived		
+	Specimen Collected	02 Jul 2024 15:35	
+	Textual Investigations	 
+CLINICAL DETAILS: 
+    recheck general health	
+02 Jul 2024	TSH
+	Message	Report ID: 47570761 
+Specimen ID: 24B00914923 
+Specimen description: TYPE UNSPECIFIED	
+	Result Indicator	Unknown	
+	Follow Up Action	Other	
+	Result Filed	Mrs Allie Weaving-Gomez	
+	Patient Informed	Patient does not need to be informed	
+	Report Archived		
+	Specimen Collected	02 Jul 2024 15:35	
+	Textual Investigations	 
+CLINICAL DETAILS: 
+    recheck general health	
+02 Jul 2024	Bone profile, Serum creatinine, Liver function test, Urea and electrolytes
+	Message	Report ID: 47569982 
+Specimen ID: 24B00914923 
+Specimen description: TYPE UNSPECIFIED	
+	Result Indicator	Unknown	
+	Follow Up Action	Other	
+	Result Filed	Mrs Allie Weaving-Gomez	
+	Patient Informed	Patient does not need to be informed	
+	Report Archived		
+	Specimen Collected	02 Jul 2024 15:35	
+	Textual Investigations	 
+CLINICAL DETAILS: 
+    recheck general health	
+02 Jul 2024	B12 & FOLATE
+	Message	Report ID: 47570855 
+Specimen ID: 24B00914923 
+Specimen description: TYPE UNSPECIFIED	
+	Result Indicator	Unknown	
+	Follow Up Action	Other	
+	Result Filed	Mrs Allie Weaving-Gomez	
+	Patient Informed	Patient does not need to be informed	
+	Report Archived		
+	Specimen Collected	02 Jul 2024 15:35	
+	Textual Investigations	 
+CLINICAL DETAILS: 
+    recheck general health	
+02 Jul 2024	Plasma glucose level
+	Message	Report ID: 47554156 
+Specimen ID: 24B00914923 
+Specimen description: TYPE UNSPECIFIED	
+	Result Indicator	Unknown	
+	Follow Up Action	Other	
+	Result Filed	Mrs Allie Weaving-Gomez	
+	Patient Informed	Patient does not need to be informed	
+	Report Archived		
+	Specimen Collected	02 Jul 2024 15:35	
+	Textual Investigations	 
+CLINICAL DETAILS: 
+    recheck general health	
+02 Jul 2024	Full blood count - FBC
+	Message	Report ID: 47545975 
+Specimen ID: 24B00914923 
+Specimen description: TYPE UNSPECIFIED	
+	Result Indicator	Abnormal	
+	Follow Up Action	Other	
+	Result Filed	Mrs Allie Weaving-Gomez	
+	Patient Informed	Patient does not need to be informed	
+	Report Archived		
+	Specimen Collected	02 Jul 2024 15:35	
+	Textual Investigations	 
+CLINICAL DETAILS: 
+    recheck general health	
+03 Jul 2024	Tissue transglutaminase IgA level
+	Message	Report ID: 47891655 
+Specimen ID: 24B00923237 
+Specimen description: TYPE UNSPECIFIED	
+	Result Indicator	Unknown	
+	Follow Up Action	Other	
+	Result Filed	Mrs Allie Weaving-Gomez	
+	Patient Informed	Patient does not need to be informed	
+	Report Archived		
+	Specimen Collected	02 Jul 2024 15:21	
+	Textual Investigations	 
+CLINICAL DETAILS: 
+    recheck general health	
+03 Jul 2024	Serum vitamin D
+	Message	Report ID: 47921861 
+Specimen ID: 24B00914923 
+Specimen description: TYPE UNSPECIFIED	
+	Result Indicator	Unknown	
+	Follow Up Action	Other	
+	Result Filed	Mrs Allie Weaving-Gomez	
+	Patient Informed	Patient does not need to be informed	
+	Report Archived		
+	Specimen Collected	02 Jul 2024 15:35	
+	Textual Investigations	 
+CLINICAL DETAILS: 
+    recheck general health	
+02 Apr 2025 09:55	Serum total 25-hydroxy vitamin D level
+	Message		
+	Result Indicator	Satisfactory	
+	Follow Up Action	No Further Action	
+	Result Filed	UNKNOWN - 02 Apr 2025 21:30	
+	Patient Informed	Patient does not need to be informed	
+	Report Archived	Dr Rowena Goalby - 03 Apr 2025 10:14	
+	Specimen Collected	02 Apr 2025 09:55	
+	Textual Investigations	Clinical Information: Clinical Details:          Order Comms Request	
+02 Apr 2025 09:55	Full blood count
+	Message		
+	Result Indicator	Satisfactory	
+	Follow Up Action	No Further Action	
+	Result Filed	UNKNOWN - 02 Apr 2025 21:30	
+	Patient Informed	Patient does not need to be informed	
+	Report Archived	Dr Rowena Goalby - 03 Apr 2025 10:14	
+	Specimen Collected	02 Apr 2025 09:55	
+	Textual Investigations	Clinical Information: Clinical Details:          Order Comms Request	
+02 Apr 2025 09:55	Serum C reactive protein level
+	Message		
+	Result Indicator	Satisfactory	
+	Follow Up Action	No Further Action	
+	Result Filed	UNKNOWN - 02 Apr 2025 21:30	
+	Patient Informed	Patient does not need to be informed	
+	Report Archived	Dr Rowena Goalby - 03 Apr 2025 10:14	
+	Specimen Collected	02 Apr 2025 09:55	
+	Textual Investigations	Clinical Information: Clinical Details:          Order Comms Request	
+02 Apr 2025 09:55	Liver function tests
+	Message		
+	Result Indicator	Satisfactory	
+	Follow Up Action	No Further Action	
+	Result Filed	UNKNOWN - 02 Apr 2025 21:30	
+	Patient Informed	Patient does not need to be informed	
+	Report Archived	Dr Rowena Goalby - 03 Apr 2025 10:14	
+	Specimen Collected	02 Apr 2025 09:55	
+	Textual Investigations	Clinical Information: Clinical Details:          Order Comms Request	
+02 Apr 2025 09:55	Urea and electrolytes
+	Message		
+	Result Indicator	Satisfactory	
+	Follow Up Action	No Further Action	
+	Result Filed	UNKNOWN - 02 Apr 2025 21:30	
+	Patient Informed	Patient does not need to be informed	
+	Report Archived	Dr Rowena Goalby - 03 Apr 2025 10:14	
+	Specimen Collected	02 Apr 2025 09:55	
+	Textual Investigations	Clinical Information: Clinical Details:          Order Comms Request	
+02 Apr 2025 09:55	Haemoglobin A1c level - IFCC standardised
+	Message		
+	Result Indicator	Satisfactory	
+	Follow Up Action	No Further Action	
+	Result Filed	UNKNOWN - 02 Apr 2025 21:59	
+	Patient Informed	Patient does not need to be informed	
+	Report Archived	Dr Rowena Goalby - 03 Apr 2025 10:14	
+	Specimen Collected	02 Apr 2025 09:55	
+	Textual Investigations	Clinical Information: Clinical Details:          Order Comms Request	
+02 Apr 2025 09:55	Blood haematinic levels
+	Message		
+	Result Indicator	Borderline	
+	Follow Up Action	Need to speak to doctor	
+	Result Filed	UNKNOWN - 03 Apr 2025 08:56	
+	Patient Informed	Patient does not need to be informed	
+	Report Archived	Dr Rowena Goalby - 03 Apr 2025 10:13	
+	Specimen Collected	02 Apr 2025 09:55	
+	Textual Investigations	Clinical Information: Clinical Details:          Order Comms Request	
+02 Apr 2025 09:55	Thyroid function test
+	Message		
+	Result Indicator	Normal	
+	Follow Up Action	No Further Action	
+	Result Filed	UNKNOWN - 03 Apr 2025 12:13	
+	Patient Informed	Patient does not need to be informed	
+	Report Archived	Dr Philip Williams (General Medical Practitioner) - 04 Apr 2025 08:07	
+	Specimen Collected	02 Apr 2025 09:55	
+	Textual Investigations	Clinical Information: Clinical Details:          Order Comms Request	
+02 Apr 2025 09:55	Tissue transglutaminase IgA level (UOM = U)
+	Message		
+	Result Indicator	Normal	
+	Follow Up Action	No Further Action	
+	Result Filed	UNKNOWN - 04 Apr 2025 09:58	
+	Patient Informed	Patient does not need to be informed	
+	Report Archived	Dr Philip Williams (General Medical Practitioner) - 04 Apr 2025 17:11	
+	Specimen Collected	02 Apr 2025 09:55	
+	Textual Investigations	Clinical Information: Clinical Details:          Order Comms Request	
+
+Active Major Problems
+Looked after child (XaXLt)	17 Feb 2016 - Ongoing	
+	Short Note	First	
+
+Active Minor Problems
+Benign melanocytic naevus of skin (X78Uv)	19 Jul 2021 - Ongoing	
+	Short Note	First Original text: Melanocytic naevus of skin	
+Anxiety disorder (E200.)	01 Aug 2023 - Ongoing	
+	Short Note	First	
+Posttraumatic stress disorder	12 Sep 2024 - Ongoing	
+	Short Note	Original text: Posttraumatic stress disorder wi...	
+Mixed anxiety and depressive disorder (X00Sb)	24 Oct 2024 - Ongoing	
+	Short Note	First	
+Labile mood (Xa3Xd)	24 Oct 2024 - Ongoing	
+	Short Note	First Original text: Emotional lability Adverse...	
+Post-traumatic stress disorder (X00Sf)	08 Feb 2025 - Ongoing	
+
+All questionnaires
+LCHS CiC Admin	06 Feb 2025 11:40
+	Entered by	Josephine Thompson (Clerical Access Role) Entered at: Children In Care Lincolnshire	
+CiC Admin
+	Date child become looked after	17 Feb 2016
+	Placing Authority / ICB 	Staffordshire and Stoke on Trent
+	Was Notification Received at the time of placement into Lincolnshire?	No
+	Is the Child an Unaccompanied Asylum Seeker?	No
+	Is the Child in a Young Offender Institute?	No
+Other new condition	08 Apr 2025 11:36
+	Entered by	Chloe Gostick (Receptionist Access Role) 	
+	Finished by	Chloe Gostick (Receptionist Access Role)    [08 Apr 2025 11:36]	
+Tell us about your problem
+	What problem do you need help with?	rash on face 
+	What symptoms do you have?	rash on face 
+	How long have you had this?	couple of weeks 
+	Have you tried anything?	steriod tablets, creams and washes
+	Have you seen anyone about this?	hospital 
+	Is there anything you want to tell us? Any ideas, worries or things you are expecting?	Patient has red rash on eyelids and under eyes and sometimes comes down face. patient went to hospital 2 weeks ago for this and they gave patient washes, creams and steriod tablets to take. The rash continoues to come back. 
+	Tell us if there are any times when you are not able to be contacted by telephone:	anytime
+UTC Sepsis Screening	08 Apr 2025 14:44
+	Entered by	Sarah Jones (Nurse Access Role) Entered at: Clinical Assessment Service	
+	Finished by	Sarah Jones (Nurse Access Role) Entered at: Clinical Assessment Service [08 Apr 2025 14:44]	
+Sepsis questions
+	I confirm this contact has no clinical context and sepsis does not need to be considered.	No
+	Do the patient's signs and symptoms trigger a sepsis screen	No
+
+All Read coded entries
+06 Jul 2023	Clinical report documentation (XaX2N)		
+	Original text: Clinical document
+11 Jul 2023	O/E - height (229..)		
+	Original text: Standing height
+11 Jul 2023	Body mass index - observation (22K..)	17.66 Kg/m�	
+	Original text: Body mass index 
+Original units: kg/m2
+11 Jul 2023	O/E - weight (22A..)		
+	Original text: Body weight
+11 Jul 2023	Child height 10th - 24th centile (XaFDQ)		
+11 Jul 2023	Child weight 9th centile (XaFD5)		
+11 Jul 2023	Looked after child health assessment annual review (XaXJe)		
+11 Jul 2023	Scanned document (XaIhQ)		
+13 Jul 2023	Choice and booking enhanced services administration (XaMJa)		
+13 Jul 2023	Skin lesion (Xa02q)	First	
+13 Jul 2023	Referral to community dermatology service (XaXsX)		
+13 Jul 2023	eConsultation via online application (Y1f3b)		
+01 Aug 2023	O/E - Diastolic BP reading (246A.)	73 mmHg	
+01 Aug 2023	Anxiety disorder (E200.)	First	
+01 Aug 2023	Chest clear (Xa83j)		
+01 Aug 2023	O/E - heart sounds normal (24B1.)		
+01 Aug 2023	O/E - pulse rate (242..)	104 bpm	
+	Original text: Pulse rate 
+Original units: beats/min
+01 Aug 2023	Blood oxygen saturation (calculated) (XaIai)	98 %	
+01 Aug 2023	O/E - Systolic BP reading (2469.)	105 mmHg	
+01 Aug 2023	eConsultation via online application (Y1f3b)		
+07 Aug 2023	Patient mobile telephone number (XaQgn)	07769238964	
+07 Aug 2023	Short message service text message sent to patient (XaMiI)		
+	Original text: SMS text message sent to patient 
+Hi Madisons parent/guardian 
+Can you please clarify the address at which <first_name> is living as we have a different address to the one on the patches request sent in and need to clarify for referral done. Please respond to this task with correct address 
+TO RESPOND, please follow this link: (link will autogenerate here) 
+Thanks,    
+Moorcroft Medical Centre
+06 Sep 2023	Generalised anxiety disorder (E2002)		
+	First 
+Original text: Anxiety state
+07 Sep 2023	Patient mobile telephone number (XaQgn)	+447999839126	
+07 Sep 2023	Short message service text message sent to patient (XaMiI)		
+	Original text: SMS text message sent to patient 
+Hi <first_name>, 
+Following a report we have received from 111 the doctor has requested that you book an appointment for a review. If you feel you need to be seen sooner, please give us a call.    
+To book: (link will autogenerate here) 
+(Expires in 7 days) 
+Thank you 
+Moorcroft Medical Centre
+22 Nov 2023	eConsultation via online application (Y1f3b)		
+22 Nov 2023	Patient mobile telephone number (XaQgn)	07927582884	
+22 Nov 2023	Short message service text message sent to patient (XaMiI)		
+	Original text: SMS text message sent to patient 
+Hi <first_name>, 
+An appointment has been booked for you to see the doctor today @ 10am at Moss Green Surgery. 
+Thank you 
+Moorcroft Medical Centre
+22 Nov 2023	Anxiety disorder (E200.)		
+	Ongoing (Original qualifier text: Review)
+22 Feb 2024	Patient telephone number (9159.)		
+	Original text: Patient mobile telephone number 
+07927582884
+22 Feb 2024	Short message service text message sent to patient (XaMiI)		
+	Original text: SMS text message sent to patient
+26 Feb 2024	Short message service text message sent to patient (XaMiI)		
+	Original text: SMS text message sent to patient 
+Hi <first_name>, 
+Your online request form has been reviewed and assessed as needing an appointment today. Please use the link below to book in within 1 hour as slots may be released to other patients after this time. This link is only valid for today. 
+Please contact reception immediately if you are unable to book an appointment. If your condition deteriorates before your appointment and you are worried, please contact the practice, NHS 111 or 999. 
+To book: (link will autogenerate here) 
+(Expires in 7 days) 
+Thank you 
+Moorcroft Medical Centre
+26 Feb 2024	Patient telephone number (9159.)		
+	Original text: Patient mobile telephone number 
+07341281598
+26 Feb 2024	Patient telephone number (9159.)		
+	Original text: Patient mobile telephone number 
++447927582884
+26 Feb 2024	Short message service text message sent to patient (XaMiI)		
+	Original text: SMS text message sent to patient 
+Hi <first_name>, 
+Your online request form has been reviewed and assessed as needing an appointment today. Please use the link below to book in within 1 hour as slots may be released to other patients after this time. This link is only valid for today. 
+Please contact reception immediately if you are unable to book an appointment. If your condition deteriorates before your appointment and you are worried, please contact the practice, NHS 111 or 999. 
+To book: (link will autogenerate here) 
+(Expires in 7 days) 
+Thank you 
+Moorcroft Medical Centre
+26 Feb 2024	Patient asked to make an appointment (XaJnh)		
+26 Feb 2024	eConsultation via online application (Y1f3b)		
+26 Feb 2024	Patient asked to make an appointment (XaJnh)		
+27 Feb 2024	eConsultation via online application (Y1f3b)		
+27 Feb 2024	Patient asked to make an appointment (XaJnh)		
+27 Feb 2024	Patient telephone number (9159.)		
+	Original text: Patient mobile telephone number 
++447927582884
+27 Feb 2024	Short message service text message sent to patient (XaMiI)		
+	Original text: SMS text message sent to patient 
+Hi <first_name>, 
+Your online request form has been reviewed and assessed as needing an appointment today. Please use the link below to book in within 1 hour as slots may be released to other patients after this time. This link is only valid for today. 
+Please contact reception immediately if you are unable to book an appointment. If your condition deteriorates before your appointment and you are worried, please contact the practice, NHS 111 or 999. 
+To book: (link will autogenerate here) 
+(Expires in 7 days) 
+Thank you 
+Moorcroft Medical Centre
+04 Mar 2024	Short message service text message sent to patient (XaMiI)		
+	Original text: SMS text message sent to patient 
+Hi <first_name>, 
+An appointment has been booked for you to see the doctor on Wednesday 6th March @ 11.45am at Moorcroft Medical Centre. 
+Thank you 
+Moorcroft Medical Centre
+04 Mar 2024	Patient telephone number (9159.)		
+	Original text: Patient mobile telephone number 
+07927582884
+04 Mar 2024	eConsultation via online application (Y1f3b)		
+06 Mar 2024	O/E - Diastolic BP reading (246A.)	61 mmHg	
+06 Mar 2024	Child weight = 2nd centile (XaFD3)		
+06 Mar 2024	O/E - Systolic BP reading (2469.)	122 mmHg	
+06 Mar 2024	Oxygen saturation at periphery (X770D)	98 %	
+	Original text: Peripheral oxygen saturation
+06 Mar 2024	O/E - pulse rate (242..)	81 bpm	
+	Original text: Pulse rate 
+Original units: beats/min
+06 Mar 2024	O/E - weight (22A..)		
+	Original text: Body weight
+06 Mar 2024	Child height 26th - 49th centile (XaFDS)		
+06 Mar 2024	O/E - height (229..)		
+	Original text: Standing height
+06 Mar 2024	O/E - heart sounds normal (24B1.)		
+06 Mar 2024	Nausea (X75qw)	First	
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: SODIUM 
+Value: 140.0 mmol/L 
+Reference range: 133.0 - 146.0
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: UREA, CREAT + ELECTROLYTES 
+(DY1730) - Normal - No action
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: BONE PROFILE 
+(DY1730) - no action needed
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: GLUCOSE (RANDOM - PLASMA) 
+Value: 4.7 mmol/L 
+Reference range: 3.5 - 7.7 
+(DY1730) - Normal - No action
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: UREA 
+Value: 3.9 mmol/L 
+Reference range: 2.5 - 6.5
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: CREATININE 
+Value: 52.0 umol/L 
+Reference range: 44.0 - 79.0
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: POTASSIUM 
+Value: 4.1 mmol/L 
+Reference range: 3.5 - 5.0
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: MAGNESIUM 
+Value: 0.76 mmol/L 
+Reference range: 0.7 - 1.0 
+(DY1730) - Normal - No action
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: CALCIUM 
+Value: 2.16 mmol/L 
+Interpretation Code: Below low reference limit 
+Reference range: 2.2 - 2.7
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: PHOSPHATE 
+Value: 0.89 mmol/L 
+Interpretation Code: Below low reference limit 
+Reference range: 0.9 - 1.8
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: ALKALINE PHOSPHATASE 
+Value: 101.0 IU/L 
+Reference range: 60.0 - 425.0
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: ALBUMIN 
+Value: 42.0 g/L 
+Reference range: 30.0 - 50.0
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: EOSINOPHILS 
+Value: 0.08 10*9/L 
+Reference range: 0.04 - 0.76
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: LARGE UNSTAINED CELLS 
+Value: 0.13 10*9/L 
+Reference range: 0.0 - 0.5
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: ADJUSTED CALCIUM 
+Value: 2.2 mmol/L 
+Interpretation Code: Normal 
+Reference range: 2.2 - 2.7
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: BASOPHILS 
+Value: 0.04 10*9/L 
+Reference range: 0.02 - 0.1
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: GFR 
+(DY1730) - Normal - No action
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: NEUTROPHILS 
+Value: 4.64 10*9/L 
+Reference range: 1.7 - 5.7
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: LYMPHOCYTES 
+Value: 1.85 10*9/L 
+Reference range: 1.4 - 3.8
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: HAEMOGLOBIN 
+Value: 128.0 g/L 
+Reference range: 113.0 - 154.0
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: HAEMATOCRIT 
+Value: 0.38 L/L 
+Reference range: 0.35 - 0.46
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: MEAN CELL HAEMOGLOBIN 
+Value: 32.0 pg 
+Reference range: 25.0 - 33.0
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: % HYPOCHROMIC RED CELLS 
+Value: 0.2 % 
+Reference range: 0.0 - 5.0
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: MONOCYTES 
+Value: 0.36 10*9/L 
+Reference range: 0.15 - 1.28
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: MEAN CELL VOLUME 
+Value: 94.9 fL 
+Interpretation Code: Above high reference limit 
+Reference range: 75.0 - 93.8
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: TOTAL BILIRUBIN 
+Value: 8.0 umol/L 
+Reference range: 0.0 - 21.0
+13 Mar 2024	Total white blood count (XaIdY)	7.1 10^9/L [3.9 - 9.9]	
+	Original text: Total white cell count 
+Original units: 10*9/L
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: LIVER FUNCTION TEST 
+(DY1730) - Normal - No action
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: ALANINE TRANSAMINASE (ALT) 
+Value: 13.0 IU/L 
+Reference range: 8.0 - 21.0
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: SAMPLE COMMENT 
+(DY1730) - no action needed 
+No specimen date/time provided. Date/time reportedindicates time of 
+laboratory receipt.
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: FULL BLOOD COUNT 
+(DY1730) - no action needed
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: PLATELETS 
+Value: 270.0 10*9/L 
+Reference range: 150.0 - 450.0
+13 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: RED BLOOD CELL COUNT 
+Value: 4.0 10*12/L 
+Reference range: 3.9 - 5.42
+14 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: VITAMIN B12 
+Value: 561.0 ng/L 
+Reference range: 211.0 - 911.0 
+B12 normal. 
+No further investigation required unless B12 
+deficiency is still clinically suspected.
+14 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: FERRITIN 
+Value: 133.0 ug/L 
+Reference range: 15.0 - 200.0 
+(DY1730) - Normal - No action 
+Ferritin normal: Absolute iron deficiency 
+unlikely, but cannot be ruled out in patients 
+with significant renal impairment
+14 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: TOTAL VITAMIN D 
+Value: 19.3 nmol/L 
+Interpretation Code: Below low reference limit 
+Reference range: 50.1 - 200.0 
+(DY1730) - replaced 
+Total vitamin D <25 nmol/L: consistent with 
+deficiency. Vitamin D treatment is recommended. 
+Advise repeat in 6 months.
+14 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: B12 & FOLATE 
+(DY1730) - Normal - No action
+14 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: TRANSFERRIN SATURATION 
+(DY1730) - Abnormal - Contact patient
+14 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: TRANSFERRIN 
+Value: 1.8 g/L 
+Interpretation Code: Below low reference limit 
+Reference range: 2.0 - 3.6
+14 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: FOLATE SERUM 
+Value: 7.3 ug/L 
+Reference range: > 2.9
+14 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: THYROID STIMULATING HORMONE 
+Value: 0.91 mIU/L 
+Reference range: 0.38 - 5.33
+14 Mar 2024	O/E - weight (22A..)		
+	Original text: Body weight
+14 Mar 2024	Nausea (X75qw)		
+	Ongoing (Original qualifier text: Review)
+14 Mar 2024	Child weight = 2nd centile (XaFD3)		
+14 Mar 2024	Body mass index - observation (22K..)		
+	Original text: Body mass index
+14 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: TRANSFERRIN SATURATION 
+Value: 84.0 % 
+Interpretation Code: Above high reference limit 
+Reference range: 16.0 - 40.0 
+Serum iron and transferrin saturation levels are 
+not recommended for the diagnosis of iron 
+deficiency.
+14 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: TSH 
+(DY1730) - Normal - No action
+14 Mar 2024	Child body mass index less than 0.4th centile (XabSe)		
+18 Mar 2024	Short message service text message sent to patient (XaMiI)		
+	Original text: SMS text message sent to patient 
+Hi <first_name>, 
+I have issued vitamin D for replacement.. This is high dose for 8 weeks and then the dose can be reduced for maintenance. please arrange a repeat blood test in 6 weeks and make contact at 8 week so the maintenance dose can be prescribed. 
+Thanks, Duncan Young 
+Moorcroft Medical Centre
+18 Mar 2024	Patient telephone number (9159.)		
+	Original text: Patient mobile telephone number 
+07927582884
+18 Mar 2024	Nausea (X75qw)		
+	Ongoing (Original qualifier text: Review)
+19 Mar 2024	Short message service text message sent to patient (XaMiI)		
+	Original text: SMS text message sent to patient 
+Hi <first_name>, 
+The doctor would like you to monitor you weight and send your weight over to us weekly. 
+You can call us and provide this information over the phone or submit this information via Patchs using the Admin box. 
+Thanks,    
+Moorcroft Medical Centre
+19 Mar 2024	O/E - pulse rate (242..)	97 bpm	
+	Original text: Pulse rate 
+Original units: beats/min
+19 Mar 2024	Child body mass index on 9th centile (XabSj)		
+19 Mar 2024	Body mass index - observation (22K..)		
+	Original text: Body mass index 
+( as per nhs bmi calculator for children and teens)
+19 Mar 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: Admin. reminder 
+Task sent to admin team about referral
+19 Mar 2024	Referral to dietitian (XaBSz)		
+	Original text: Refer to dietician
+19 Mar 2024	Short message service text message sent to patient (XaMiI)		
+	Original text: SMS text message sent to patient 
+Hi <first_name>, 
+An appointment has been booked for you to see the doctor this morning @ 11am at Moss Green Surgery. 
+Thank you 
+Moorcroft Medical Centre
+19 Mar 2024	Underweight (X76C3)	First	
+19 Mar 2024	O/E - Systolic BP reading (2469.)	110 mmHg	
+19 Mar 2024	O/E - Diastolic BP reading (246A.)	67 mmHg	
+19 Mar 2024	Patient telephone number (9159.)		
+	Original text: Patient mobile telephone number 
+07927582884
+19 Mar 2024	eConsultation via online application (Y1f3b)		
+19 Mar 2024	Patient telephone number (9159.)		
+	Original text: Patient mobile telephone number 
+07927582884
+26 Mar 2024	Underweight (X76C3)		
+	Ongoing (Original qualifier text: Review)
+28 Mar 2024	Tissue transglutaminase IgA level (XaJg2)		
+	Original text: Tissu transglutaminase IgA lev 
+Value: < 1.9 CU 
+Reference range: < 20.0 
+(BAR1730) - Normal - No action 
+tTG antibody negative;provided the patient is not 
+IgA deficient, and is on a gluten-containing diet, 
+coeliac disease is unlikely.
+03 May 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: Preferred method of contact: unknown
+03 May 2024	Main spoken language English (XaG5t)		
+03 May 2024	Consent given for communication by SMS text messaging (XaQid)		
+	Original text: Consent given for communication by text messaging
+03 May 2024	Consent given for communication by email (XaRFI)		
+21 Jun 2024	O/E - weight (22A..)		
+	Original text: Body weight
+21 Jun 2024	Anxiety disorder (E200.)		
+	Ongoing (Original qualifier text: Review)
+21 Jun 2024	Child weight 3rd - 8th centile (XaFD4)		
+02 Jul 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: TSH 
+(NA) - Acceptable, no additional action required
+02 Jul 2024	Serum potassium level (XE2pz)	3.7 mmol/L [3.5 - 5]	
+	Original text: Serum potassium
+02 Jul 2024	Serum urea level (XM0lt)	4.9 mmol/L [2.5 - 6.5]	
+02 Jul 2024	Serum TSH level (XaELV)	0.85 miu/L [0.38 - 5.33]	
+02 Jul 2024	Serum alanine aminotransferase level (XaLJx)	14 iu/L [8 - 21]	
+	Original text: Serum ALT level
+02 Jul 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: Urea and electrolytes 
+(NA) - Acceptable, no additional action required
+02 Jul 2024	Bone profile (44Z2.)		
+	 
+(NA) - Acceptable, no additional action required
+02 Jul 2024	Serum total bilirubin level (XaERu)	6 umol/L [0 - 21]	
+02 Jul 2024	Serum sodium level (XE2q0)	139 mmol/L [133 - 146]	
+	Original text: Serum sodium
+02 Jul 2024	Serum ferritin level (XE24r)	124 ng/ml [15 - 200]	
+	Original text: Serum ferritin 
+Original units: ug/L 
+(NA) - Acceptable, no additional action required 
+Ferritin normal: Absolute iron deficiency 
+unlikely, but cannot be ruled out in patients 
+with significant renal impairment
+02 Jul 2024	Liver function tests (X77WP)		
+	Original text: Liver function test 
+(NA) - Acceptable, no additional action required
+02 Jul 2024	GFR calculated abbreviated MDRD (XaK8y)		
+	Original text: GFR calculated abbreviatd MDRD 
+EGFR not applicable on children
+02 Jul 2024	Serum creatinine level (XE2q5)	57 umol/L [44 - 79]	
+	Original text: Serum creatinine
+02 Jul 2024	Serum creatinine level (XE2q5)		
+	Original text: Serum creatinine 
+(NA) - Acceptable, no additional action required
+02 Jul 2024	Serum inorganic phosphate level (XE2q4)	1.17 mmol/L [0.9 - 1.8]	
+	Original text: Serum inorganic phosphate
+02 Jul 2024	Serum adjusted calcium concentration (Xabpk)	2.34 mmol/L [2.2 - 2.7]	
+	Original text: Serum adjusted calcium conc
+02 Jul 2024	Serum calcium level (XE2q3)	2.26 mmol/L [2.2 - 2.7]	
+	Original text: Serum calcium
+02 Jul 2024	Serum alkaline phosphatase level (XE2px)	99 iu/L [60 - 425]	
+	Original text: Serum alkaline phosphatase
+02 Jul 2024	Serum albumin level (XE2eA)	40 g/L [30 - 50]	
+	Original text: Serum albumin
+02 Jul 2024	Haematocrit (X76tb)	0.377    [0.35 - 0.46]	
+	Original units: L/L
+02 Jul 2024	Serum folate level (42U5.)	8.9 ng/ml [> 2.9]	
+	Original text: Serum folate 
+Original units: ug/L
+02 Jul 2024	Serum vitamin B12 level (XE2pf)	487 ng/L [211 - 911]	
+	Original text: Serum vitamin B12 
+B12 normal. 
+No further investigation required unless B12 
+deficiency is still clinically suspected.
+02 Jul 2024	Large unstained cells (XE2bq)	0.13 10*9/L [0 - 0.5]	
+02 Jul 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: B12 & FOLATE 
+(NA) - Acceptable, no additional action required
+02 Jul 2024	Lymphocyte count (42M..)	1.87 10^9/L [1.4 - 3.8]	
+	Original units: 10*9/L
+02 Jul 2024	Basophil count (42L..)	0.07 10^9/L [0.02 - 0.1]	
+	Original units: 10*9/L
+02 Jul 2024	Eosinophil count - observation (42K..)	0.07 10^9/L [0.04 - 0.76]	
+	Original text: Eosinophil count 
+Original units: 10*9/L
+02 Jul 2024	Neutrophil count (42J..)	4.05 10^9/L [1.7 - 5.7]	
+	Original units: 10*9/L
+02 Jul 2024	Monocyte count - observation (42N..)	0.33 10^9/L [0.15 - 1.28]	
+	Original text: Monocyte count 
+Original units: 10*9/L
+02 Jul 2024	Plasma glucose level (XM0ly)	4.2 mmol/L [3.5 - 7.7]	
+	 
+(NA) - Acceptable, no additional action required
+02 Jul 2024	Hypochromic red blood cells (42E2.)		
+	Value: 0.1 % 
+Reference range: 0.0 - 5.0
+02 Jul 2024	Mean cell haemoglobin level (XE2pb)	32.3 pg [25 - 33]	
+	Original text: Mean corpusc. haemoglobin(MCH)
+02 Jul 2024	Red blood cell count (426..)	3.97 10^12/L [3.9 - 5.42]	
+	Original text: Red blood cell (RBC) count 
+Original units: 10*12/L
+02 Jul 2024	Mean cell volume (42A..)	94.9 fL [75 - 93.8]	
+	Original text: Mean corpuscular volume (MCV) 
+Interpretation Code: Above high reference limit
+02 Jul 2024	Full blood count (424..)		
+	Original text: Full blood count - FBC 
+(NA) - Acceptable, no additional action required
+02 Jul 2024	Platelet count - observation (42P..)	304 10^9/L [150 - 450]	
+	Original text: Platelet count 
+Original units: 10*9/L
+02 Jul 2024	Total white blood count (XaIdY)	6.5 10^9/L [3.9 - 9.9]	
+	Original text: Total white cell count 
+Original units: 10*9/L
+02 Jul 2024	Serum vitamin D level (XE2e7)		
+	Original text: Serum vitamin D 
+(NA) - see comment 
+This test has already been performed recently.Test result is from 
+Lab number 24B00061092 on13/03/2024Previous Vitamin D result 19.3 
+nmol/L
+02 Jul 2024	Haemoglobin concentration (Xa96v)	128 g/L [113 - 154]	
+	Original text: Haemoglobin estimation
+03 Jul 2024	Tissue transglutaminase IgA level (XaJg2)		
+	Original text: Tissu transglutaminase IgA lev 
+Value: < 1.9 CU 
+Reference range: < 20.0 
+(JT1) - Acceptable, no additional action required 
+tTG antibody negative;provided the patient is not 
+IgA deficient, and is on a gluten-containing diet, 
+coeliac disease is unlikely.
+03 Jul 2024	Serum vitamin D level (XE2e7)	123.3 nmol/L [50.1 - 200]	
+	Original text: Serum vitamin D 
+(EC_) - Acceptable, no additional action required 
+Total vitamin D > 50 nmol/L: adequate vitamin D 
+status Routine vitamin D monitoring not required.
+23 Jul 2024	Patient allocated named accountable general practitioner (XacWQ)		
+	Dr Elizabeth Cottrell
+23 Jul 2024	Informing patient of named accountable general practitioner (Xab9D)		
+	Dr Elizabeth Cottrell
+23 Jul 2024	Anxiety disorder (E200.)		
+	Ongoing (Original qualifier text: Review)
+30 Jul 2024	Electronic record notes summary verified (XaR5K)		
+23 Aug 2024	Anterior knee pain (X700S)		
+	First 
+Laterality: Left
+23 Aug 2024	O/E - weight (22A..)		
+	Original text: Body weight
+23 Aug 2024	Child weight 3rd - 8th centile (XaFD4)		
+23 Aug 2024	O/E - tympanic temperature (XaIAQ)	36.9 C	
+	Original text: Tympanic temperature 
+Original units: degrees C
+23 Aug 2024	Anxiety disorder (E200.)		
+	Ongoing (Original qualifier text: Review)
+23 Aug 2024	Other person in contact (XaIfk)		
+	Original text: Contact person 
+foster mum
+02 Sep 2024	Email sent to outside agency (XaJHC)		
+	<EMAIL_ADDRESS>
+02 Sep 2024	Email received from third party (XabYo)		
+04 Sep 2024	Email received from third party (XabYo)		
+06 Sep 2024	Email sent to outside agency (XaJHC)		
+	<EMAIL_ADDRESS>
+06 Sep 2024	Email received from third party (XabYo)		
+12 Sep 2024	Transfer-degraded record entry (XaLGM)		
+	Posttraumatic stress disorder 
+Original text: Posttraumatic stress disorder 
+with mixed anxiety and depressive symptoms
+23 Sep 2024	Child weight 3rd - 8th centile (XaFD4)		
+23 Sep 2024	O/E - weight (22A..)		
+	Original text: Body weight
+23 Sep 2024	Child height 10th - 24th centile (XaFDQ)		
+23 Sep 2024	O/E - height (229..)		
+	Original text: Standing height
+23 Sep 2024	Child body mass index 10th-24th centile (XabSk)		
+23 Sep 2024	Body mass index - observation (22K..)		
+	Original text: Body mass index
+23 Sep 2024	Sitting systolic blood pressure (XaJ2E)	101 mmHg	
+23 Sep 2024	Sitting diastolic blood pressure (XaJ2F)	53 mmHg	
+23 Sep 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: Sitting blood pressure
+23 Sep 2024	Heart rate (X773r)	82 BPM	
+	Original units: beats/min
+23 Sep 2024	Standing systolic blood pressure (XaIwj)	118 mmHg	
+23 Sep 2024	Standing diastolic blood pressure (XaIwk)	62 mmHg	
+23 Sep 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: Standing blood pressure
+23 Sep 2024	Heart rate (X773r)	79 BPM	
+	Original units: beats/min
+25 Sep 2024	Health care services information leaflet given (XaLMh)		
+25 Sep 2024	Patient telephone number (9159.)		
+	Original text: Patient mobile telephone number 
++447738484299
+25 Sep 2024	Short message service text message sent to patient (XaMiI)		
+	Original text: SMS text message sent to patient 
+Hi <first_name>, 
+Our provider for online consultation services is changing. Access to Online Consult will end on 27/9/24 at 8am. The link on our website www.wolstantonmedicalcentre.nhs.uk will be updated to our new provider; any submissions via links starting <URL> will no longer reach us. We hope the change in provider will be well received as the choice has been made based on feedback received from you. An information leaflet is attached.    
+To view your attachment, please follow this link: <URL> 
+Wolstanton Medical Centre 
+SMS sent on 25/09/2024 09:01:48
+30 Sep 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: Admin. reminder 
+Referral task declined by user
+30 Sep 2024	Referral to paediatric allergy service (Xaacn)		
+24 Oct 2024	Mixed anxiety and depressive disorder (X00Sb)	First	
+24 Oct 2024	Labile mood (Xa3Xd)		
+	First 
+Original text: Emotional lability 
+Adverse childhood experiences leading to emotional dysregulation
+24 Oct 2024	Seasonal influenza vaccin given by other healthcare provider (XaZ0e)		
+	Original text: Influenza vaccination given by other healthcare provider (situation) 
+Injection site: Nasal cavity structure (body structure)
+24 Oct 2024	O/E - Systolic BP reading (2469.)	119 mmHg	
+24 Oct 2024	O/E - height (229..)	1.574 m	
+	Converted from: 157.4 cm
+24 Oct 2024	O/E - weight (22A..)	42.8 Kg	
+24 Oct 2024	O/E - Diastolic BP reading (246A.)	74 mmHg	
+	Original units: mm Hg
+11 Nov 2024	Child weight 3rd - 8th centile (XaFD4)		
+11 Nov 2024	O/E - weight (22A..)		
+	Original text: Body weight
+11 Nov 2024	Child height 10th - 24th centile (XaFDQ)		
+11 Nov 2024	Foster care (8GE7.)		
+11 Nov 2024	Looked after child (XaXLt)		
+	Ongoing (Original qualifier text: Review)
+11 Nov 2024	O/E - height (229..)		
+	Original text: Standing height
+11 Nov 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: Child lives with unrelated adult
+11 Nov 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: [RFC] Looked after child (LAC) health assessment
+19 Nov 2024	Transfer-degraded record entry (XaLGM)		
+	Original text: Admin. reminder 
+Referral task declined by user
+19 Nov 2024	Other person in contact (XaIfk)		
+	Original text: Contact person 
+Martin Ansell- Foster Carer
+19 Nov 2024	Skin lesion (Xa02q)	New	
+20 Nov 2024	Referral to dermatology service (8H43.)		
+	Original text: Dermatological referral
+28 Jan 2025	Consent given for communication by telephone answer machine (XaXH2)	mobile	
+28 Jan 2025	O/E - height (229..)	1.6 m	
+28 Jan 2025	Consent given to share patient data with specified 3rd party (XaNwR)		
+	kerry houlton mother
+28 Jan 2025	Patient consented to sharing of information (Y3358)		
+	kerry houlton mother
+28 Jan 2025	White British (XaFwD)		S
+28 Jan 2025	Main spoken language English (XaG5t)		S
+28 Jan 2025	Enjoys moderate exercise (1384.)		
+28 Jan 2025	Never smoked tobacco (XE0oh)		
+28 Jan 2025	Consent given leave phone message with specified 3rd party (XaYXT)		
+	kerry houlton mother
+28 Jan 2025	Informing patient of named accountable general practitioner (Xab9D)		
+28 Jan 2025	Patient allocated named accountable general practitioner (XacWQ)		
+28 Jan 2025	Single person (XE0oZ)		
+28 Jan 2025	Alcohol units per week (Ub173)	0 Units/Week	
+28 Jan 2025	Consent given for communication by email (XaRFI)		
+28 Jan 2025	FAST - Fast Alcohol Screening Test (XaNO9)	0 	
+28 Jan 2025	Consent given for communication by SMS text messaging (XaQid)		
+28 Jan 2025	New patient questionnaire completed (9187.)		
+29 Jan 2025	Administration note (XaIg4)		
+	Printout received from Child Health Department, South Staffordshire Health Information
+29 Jan 2025	Single person (XE0oZ)		
+03 Feb 2025	Main spoken language English (XaG5t)		
+05 Feb 2025	Administration note (XaIg4)		
+	Email with Notification of Placement Move    -    Received From: MPFT Safeguarding Children - LAC <EMAIL_ADDRESS>    05/02/2025 (see Record Attachments)    
+
+05 Feb 2025	Child looked after: Living out of borough (Y0c72)		
+06 Feb 2025	Electronic record notes summary verified (XaR5K)	GP2GP summary	
+06 Feb 2025	White British - ethnic category 2001 census (XaQEa)		OE
+06 Feb 2025	<gender> (X768C)		OE
+06 Feb 2025	Administration note (XaIg4)		
+	Legal Status: Care Order    
+Date Became Looked After:    <DATE_TIME> 
+Reason for being looked after: Abuse or neglect 
+Previous RHA Date: <DATE_TIME>
+06 Feb 2025	Main spoken language (Ua0HJ)	English	OE
+06 Feb 2025	Main spoken language English (XaG5t)		
+08 Feb 2025	O/E - weight (22A..)	41 Kg	OE
+08 Feb 2025	Post-traumatic stress disorder (X00Sf)		NE
+12 Feb 2025	Medication review done (XaF8d)		
+13 Feb 2025	Provision of written information about information sharing (Xaa7O)		
+18 Feb 2025	Body mass index - observation (22K..)	16.02 Kg/m�	
+25 Feb 2025	Test status (X74VU)		
+25 Feb 2025	Blood test requested (XaK6t)		
+25 Feb 2025	Calprotectin level (XaPbu)		
+25 Feb 2025	No (Y0428)		
+25 Feb 2025	Vitamin D level (XaXhN)		
+25 Feb 2025	Urea and electrolyte observations (X771N)		
+25 Feb 2025	Coeliac disease screen (XaIc7)		
+25 Feb 2025	Thyroid stimulating hormone (X80Gc)		
+25 Feb 2025	Liver function tests NOS (44DZ.)		
+25 Feb 2025	Blood haematinic activity (X76t8)		
+25 Feb 2025	Haemoglobin A1c measurement (Y1cbf)		
+25 Feb 2025	Full blood count NOS (424Z.)		
+25 Feb 2025	C-reactive protein level (X772l)		
+25 Feb 2025	O/E - weight (22A..)	41 Kg	NE
+06 Mar 2025	Choice and booking enhanced services administration (XaMJa)		
+06 Mar 2025	Referral to paediatrician (8H42.)		
+10 Mar 2025	Discussion about treatment options (YA517)		
+10 Mar 2025	POPS - Paediatric Observation Priority Score (XacZ4)	1 	
+10 Mar 2025	O/E - rate of respiration (235..)	19 Resp/min	
+10 Mar 2025	Pulse rate (X773s)	103 bpm	
+10 Mar 2025	O/E - tympanic temperature (XaIAQ)	36.8 C	
+10 Mar 2025	Blood oxygen saturation (X7708)	100 %	
+10 Mar 2025	Informed consent given (XaLQR)		
+10 Mar 2025	O/E - no guarding on palpation (25D1.)		
+10 Mar 2025	Significant event reported (XaJ2O)		
+	seen with mum Kerry @ Lincoln UTC    
+gastritis-no safeguarding concerns
+14 Mar 2025	Short message service text message sent to patient (XaMiI)		
+	 
+Hi Miss Foster, 
+A prescription for Cyclizine has been issued as requested. 
+Thanks, Lauryn 
+Disney Medical Practice 
+Sent on 14/03/2025 at 15:54
+14 Mar 2025	Patient telephone number (9159.)	+447961687502	
+28 Mar 2025	Prescription of drug (Y1ec8)		
+28 Mar 2025	Medication requested (8B3H.)		
+28 Mar 2025	Administration note (XaIg4)		
+02 Apr 2025	Monitoring status (XaBUo)		
+02 Apr 2025	Blood sample taken (XaEJK)		
+	B12FF, CRP, FBC, HBA1C, LFT, TSH, TTG, UE, Vit D
+02 Apr 2025	Serum total 25-hydroxy vitamin D level (Xabo0)	64 nmol/L	
+	Vitamin D: 
+Levels <25 nmol/L suggest deficiency. 
+Levels between 25 and 50 nmol/L suggest insufficiency. 
+A high dose treatment or a low dose supplement may be 
+required based on patient's clinical status, bone 
+health and risk factors. If patient has hypercalcaemia, 
+avoid high dose replacement and consider appropriate 
+referral.
+02 Apr 2025	Basophil count (42L..)	0.06 10^9/L [0.02 - 0.1]	
+02 Apr 2025	Eosinophil count - observation (42K..)	0.22 10^9/L [0.02 - 0.5]	
+02 Apr 2025	Monocyte count - observation (42N..)	0.52 10^9/L [0.2 - 0.8]	
+02 Apr 2025	Lymphocyte count (42M..)	2.17 10^9/L [1.5 - 4]	
+02 Apr 2025	Neutrophil count (42J..)	7.54 10^9/L [1.8 - 8]	
+02 Apr 2025	Mean cell haemoglobin concentration (429..)	34.1 g/dL [32 - 35.9]	
+	This value has been converted from: 341.0 g/L
+02 Apr 2025	Mean cell haemoglobin level (XE2pb)	32.3 pg [26.3 - 32.5]	
+02 Apr 2025	Haematocrit (X76tb)	0.396    [0.36 - 0.46]	
+02 Apr 2025	Mean cell volume (42A..)	95 fL [81 - 97]	
+02 Apr 2025	Red blood cell count (426..)	4.18 10^12/L [4.1 - 5.1]	
+02 Apr 2025	Platelet count - observation (42P..)	347 10^9/L [150 - 400]	
+02 Apr 2025	Total white blood count (XaIdY)	10.5 10^9/L [4.3 - 11.2]	
+02 Apr 2025	Haemoglobin concentration (Xa96v)	135 g/L [120 - 160]	
+02 Apr 2025	Full blood count (424..)		
+02 Apr 2025	Serum C reactive protein level (XaINL)	0.4 mg/L [< 5]	
+02 Apr 2025	Serum bilirubin level (44E..)	7 umol/L [< 21]	
+02 Apr 2025	Serum alkaline phosphatase level (XE2px)	82 iu/L [60 - 425]	
+02 Apr 2025	Serum alanine aminotransferase level (XaLJx)	11 iu/L [< 33]	
+02 Apr 2025	Serum globulin level (XE2eB)	26 g/L [20 - 40]	
+	Please note amended globulin reference range as from 
+22.06.2022.
+02 Apr 2025	Serum albumin level (XE2eA)	37 g/L [30 - 50]	
+02 Apr 2025	Serum total protein level (XE2e9)	63 g/L [60 - 80]	
+02 Apr 2025	Liver function tests (X77WP)		
+02 Apr 2025	Serum creatinine level (XE2q5)	66 umol/L [45 - 84]	
+02 Apr 2025	Serum urea level (XM0lt)	4 mmol/L [2.5 - 6.5]	
+02 Apr 2025	Serum potassium level (XE2pz)	3.8 mmol/L [3.5 - 5]	
+02 Apr 2025	Serum sodium level (XE2q0)	140 mmol/L [133 - 146]	
+02 Apr 2025	Urea and electrolytes (X77Wi)		
+02 Apr 2025	Haemoglobin A1c level - IFCC standardised (XaPbt)	31 mmol/mol [20 - 41]	
+	Take urgent same-day action if suspecting type 1 
+diabetes (HbA1c may be normal). 
+HbA1c is accepted for the diagnosis of type 2 
+diabetes in the UK, but should not be used to diagnose 
+type 1 diabetes or in the following contexts: 
+childhood, pregnancy, renal failure, haemoglobinopathy 
+trait, anaemia, HIV, abnormal red cell turnover 
+or any recent treatment likely to affect glycaemia 
+or red cell turnover. 
+From 03/04/2023 HbA1c analysis is now performed by 
+capillary electrophoresis.
+02 Apr 2025	Serum ferritin level (XE24r)	207 ng/ml [15 - 90]	
+	Outside reference range
+02 Apr 2025	Serum folate level (42U5.)	2.2 ng/ml [2 - 18.7]	
+	Borderline folate level - possible folate deficiency 
+Please refer to WHO guidance on assessment of folate 
+status.
+02 Apr 2025	Serum vitamin B12 level (XE2pf)	385 ng/L [197 - 771]	
+	B12 levels are often lower in pregnancy and therefore 
+need careful clinical interpretation in such scenarios. 
+Suggest discuss with the consultant haematologist if 
+further advice is required.
+02 Apr 2025	Blood haematinic levels (XaDsm)		
+02 Apr 2025	Serum TSH level (XaELV)	0.62 miu/L [0.27 - 4.5]	
+02 Apr 2025	Serum free T4 level (XaERr)	20.1 pmol/L [11 - 23]	
+02 Apr 2025	Thyroid function test (X77Wg)		
+	Please note that thyroid hormone, tumour markers, 
+haematinics, hormone, troponin, HCG, BNP and digoxin 
+assays may be subject to interference in patients 
+receiving biotin therapy.
+02 Apr 2025	Tissue transglutaminase IgA level (UOM = U) (Y3d1e)	< 1.9 U [< 20]	
+	Please note: IgA tissue transglutaminase antibody assay 
+replaces the IgA endomysial antibody assay as the screening 
+test for coeliac disease.
+08 Apr 2025	Significant event reported (XaJ2O)		
+	cas call - not assessed
+08 Apr 2025	Friends & Family Test (FFT) (Y1def)		
+11 Apr 2025	Test status (X74VU)		
+11 Apr 2025	Blood test requested (XaK6t)		
+11 Apr 2025	Laboratory test requested (413..)		
+	Raised ferritin ? cause
+11 Apr 2025	Liver function tests NOS (44DZ.)		
+11 Apr 2025	Serum iron tests NOS (42RZ.)		
+11 Apr 2025	Blood haematinic activity (X76t8)		
+11 Apr 2025	Full blood count NOS (424Z.)		
+11 Apr 2025	Friends & Family Test (FFT) (Y1def)		
+
+All Recalls
+05 Feb 2017	Miscellaneous	Cancelled by clinician on 11 Nov 2019
+	Notes: Original text: Meningitis ACW & Y vaccination
+	Cancellation Reason: Patient deducted.
+05 Feb 2017	Miscellaneous	Cancelled by clinician on 11 Nov 2019
+	Notes: Original text: First human papillomavirus vaccination
+	Cancellation Reason: Patient deducted.
+05 Feb 2017	Miscellaneous	Cancelled by clinician on 11 Nov 2019
+	Notes: Original text: Low dose diphtheria, tetanus and inactivated polio vaccinati
+	Cancellation Reason: Patient deducted.
+22 Jun 2021	Asthma annual review	Seen
+	Notes: Recall status set to 'Seen' by GP2GP transfer
+08 May 2024	Miscellaneous	Seen
+	Notes: Recall status set to 'Seen' by GP2GP transfer 
+Original text: Low dose diphtheria, tetanus and inactivated polio vaccination
+08 May 2024	Miscellaneous	Seen
+	Notes: Recall status set to 'Seen' by GP2GP transfer 
+Original text: Low dose diphtheria, tetanus and inactivated polio vaccination
+08 May 2024	Miscellaneous	Seen
+	Notes: Recall status set to 'Seen' by GP2GP transfer 
+Original text: Low dose diphtheria, tetanus and inactivated polio vaccination
+08 May 2024	Miscellaneous	Seen
+	Notes: Recall status set to 'Seen' by GP2GP transfer 
+Original text: Low dose diphtheria, tetanus and inactivated polio vaccination
+08 May 2024	Miscellaneous	Seen
+	Notes: Recall status set to 'Seen' by GP2GP transfer 
+Original text: Low dose diphtheria, tetanus and inactivated polio vaccination
+08 May 2024	Miscellaneous	Seen
+	Notes: Recall status set to 'Seen' by GP2GP transfer 
+Original text: Low dose diphtheria, tetanus and inactivated polio vaccination
+08 May 2024	Miscellaneous	Seen
+	Notes: Recall status set to 'Seen' by GP2GP transfer 
+Original text: Low dose diphtheria, tetanus and inactivated polio vaccination
+08 May 2024	Miscellaneous	Seen
+	Notes: Recall status set to 'Seen' by GP2GP transfer 
+Original text: Low dose diphtheria, tetanus and inactivated polio vaccination
+08 May 2024	First human papillomavirus vaccination	Seen
+	Notes: Recall status set to 'Seen' by GP2GP transfer
+08 May 2024	Miscellaneous	Seen
+	Notes: Recall status set to 'Seen' by GP2GP transfer 
+Original text: Low dose diphtheria, tetanus and inactivated polio vaccination
+08 May 2024	Miscellaneous	Seen
+	Notes: Recall status set to 'Seen' by GP2GP transfer 
+Original text: Low dose diphtheria, tetanus and inactivated polio vaccinati 
+Status: Pending,
+08 May 2024	Meningitis ACW & Y vaccination	Seen
+	Notes: Recall status set to 'Seen' by GP2GP transfer 
+Status: Pending,
+08 May 2024	Booster meningitis C vaccination	Seen
+	Notes: Recall status set to 'Seen' by GP2GP transfer
+08 May 2024	Miscellaneous	Seen
+	Notes: Recall status set to 'Seen' by GP2GP transfer 
+Original text: Low dose diphtheria, tetanus and inactivated polio vaccination
+08 May 2024	First human papillomavirus vaccination	Seen
+	Notes: Recall status set to 'Seen' by GP2GP transfer 
+Status: Pending,
+08 May 2024	Miscellaneous	Seen
+	Notes: Recall status set to 'Seen' by GP2GP transfer 
+Original text: Low dose diphtheria, tetanus and inactivated polio vaccinati
+08 May 2024	Primary Care Group	Pending, Due 06 Mar 2110
+	Notes: Admin tag (DO NOT REMOVE)
+11 Nov 2024	Miscellaneous	Pending, Due 11 Nov 2025
+	Notes: Original text: [RFC] Looked after child (LAC) health assessment
