@@ -115,3 +115,11 @@ class VectorHelper:
         self.vectorstore.add_documents(documents)
 
         return True, f"Stored {len(documents)} documents."
+    
+    def search_knowledge_base(self, query: str, k: int = 5, filter: dict = None):
+        """
+        Search the knowledge base for the given query.
+
+        Returns a list of documents most similar to the query.
+        """
+        return self.vectorstore.similarity_search(query, k=k, filter=filter)
