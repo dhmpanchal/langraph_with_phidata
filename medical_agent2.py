@@ -1,7 +1,8 @@
 """
-medical_agent.py
+medical_agent2.py
 
-Agentic RAG pipeline for extracting patient medical conditions
+Agentic RAG pipeline for extracting patient medical conditions.
+Create an agent that create vector query and fetch the relevant information from the vector database.
 using:
 - Ollama LLM
 - LangChain Agent + Tools
@@ -22,7 +23,6 @@ from langchain.messages import SystemMessage, HumanMessage
 from langchain_core.output_parsers import JsonOutputParser
 from pydantic import BaseModel, Field
 from langchain_core.runnables import RunnableConfig
-from langchain_core.output_parsers import PydanticOutputParser
 
 import os
 import re
@@ -30,7 +30,6 @@ from vector_helper import VectorHelper
 
 from dotenv import load_dotenv
 load_dotenv()
-
 
 # ==========================
 # Configuration
@@ -40,17 +39,6 @@ TOP_K = 10
 # ==========================
 # Pydantic Models
 # ==========================
-
-class MajorConditions(BaseModel):
-    key: str = Field(description="The name of the condition (e.g., IBS, Depression, Diabetes)")
-    value: str = Field(description="A brief reason, context, or supporting detail (e.g., date diagnosed, symptoms, related medication, or history)")
-    start_date: str = Field(description="The start date of the condition in MM-DD-YYYY format mention in the patient information")
-    end_date: str = Field(description="The end date of the condition in MM-DD-YYYY format mention in the patient information")
-    status: str = Field(description="The status of the condition (e.g., ongoing, cleaned up)")
-
-class DiagnosisExtraction(BaseModel):
-    major_conditions: List[MajorConditions] = Field(default_factory=list)
-
 class PatientSearchInput(BaseModel):
     query: str = Field(description="Medical question or search query")
     file_path: str = Field(description="Exact file path of the patient document to search")
@@ -58,7 +46,6 @@ class PatientSearchInput(BaseModel):
 # ==========================
 # LLM Setup (Ollama)
 # ==========================
-
 llm = ChatOpenAI(
     model="llama3.2",
     base_url="http://localhost:11434/v1",  # Ollama endpoint
@@ -66,12 +53,10 @@ llm = ChatOpenAI(
     temperature=0
 )
 
-
 # ==========================
 # Vector Store (PGVector)
 # ==========================
 vectorstore = VectorHelper()
-
 
 # ==========================
 # RAG Tool (Retrieval)
@@ -91,80 +76,48 @@ def rag_patient_retrieval(query: str, file_path: str) -> str:
 
     return "\n\n".join(doc.page_content for doc in docs)
 
-
-
 tools = [rag_patient_retrieval]
-
-
-parser = PydanticOutputParser(pydantic_object=DiagnosisExtraction)
 
 # ==========================
 # Agent Prompt (Decision Only)
 # ==========================
-
 agent_system_prompt = SystemMessage(
     content="""
-You are a medical reasoning assistant.
+You are a retrieval agent.
 
-Your work is to retrieve the patient information based on the user question from the vector database using the RAG tool.
+Your work is to retrieve the patient information based on the user question from the vector database using the RAG tool ** patient_document_search **
 
 Identify the query and create the described RAG search query to retrieve the relevant information from the document. 
 
-After getting chunks of the document from the RAG tool, review the given patient infromation give below as a context. Your task is to extract a list of all major or chronic medical conditions mentioned in the given patient infromations and need to find dates of the medical conditions from when it detected and calculate the proper dates in formats and from when it was cleaned up or still it is on going.
+The tool requires:
+- query → the medical question
+- file_path → the patient document path provided in the conversation
 
-For each condition, provide:
-- key: The name of the condition (e.g., IBS, Depression, Diabetes)
-- value: A brief reason, context, or supporting detail
-- start_date: The start date of the condition mention in the patient information
-- end_date: The end date of the condition mention in the patient information
-- status: ongoing or cleaned up
-
-Fulfill the user question and return the answer STICKLY in the following JSON format. 
-DO NOT use any other schema (like 'diagnosis', 'medication', etc.). Use EXACTLY these keys:
-
-{
-  "major_conditions": [
-    {
-      "key": "Condition Name",
-      "value": "Brief reason or supporting detail",
-      "start_date": "MM-DD-YYYY",
-      "end_date": "MM-DD-YYYY or 'ongoing'",
-      "status": "ongoing/cleaned up"
-    }
-  ]
-}
-
-If no conditions are found, return:
-{
-  "major_conditions": []
-}
-
-Ensure the output is ONLY the JSON object. No conversational filler, no markdown blocks.
+Always extract the file_path from the conversation and pass it to the tool.
+You must ALWAYS call the patient_document_search tool.
+Return ONLY the tool output. Do not summarize. Do not answer.
 """
 )
 
 # ==========================
-# Agent Creation
+# Create Agent that create a vector query and fetch the relevant information from the vector database using the RAG tool
 # ==========================
-
-agent = create_agent(
+rag_agent = create_agent(
     model=llm,
     tools=tools,
     system_prompt=agent_system_prompt,
 )
 
-
 # ==========================
-# Public Function
+# Public Functions
 # ==========================
-
-def run_medical_agent(user_query: str, file_number: int):
+def run_rag_agent(user_query: str, file_number: int):
     """
-    Main entry point for Agentic RAG medical extraction
+    Agent that create a vector query and fetch the relevant information from the vector database using the RAG tool
     """
 
     # Step 1: Agent decides & retrieves context
-    agent_result = agent.invoke(
+    agent_result = rag_agent.invoke(
         {
             "messages": [
                 HumanMessage(content=user_query)
@@ -177,13 +130,12 @@ def run_medical_agent(user_query: str, file_number: int):
 
     # Step 2: Extract content from the last message
     last_message = agent_result["messages"][-1].content
-    print(f"Raw agent output: {last_message}")
 
     # Step 3: Parse the content into the Pydantic model
     try:
         # Using JsonOutputParser to handle possible markdown wrapper or extra text
         parsed_json = parser.parse(last_message)
-        return parsed_json
+        return DiagnosisExtraction(**parsed_json)
     except Exception as e:
         print(f"Error parsing agent output to Pydantic: {e}")
         # Attempt to find JSON in the string if direct parsing fails
@@ -195,20 +147,3 @@ def run_medical_agent(user_query: str, file_number: int):
             except:
                 pass
         return last_message
-
-
-
-
-# ==========================
-# Example Usage
-# ==========================
-
-# if __name__ == "__main__":
-#     query = """
-#     Retrieve the patient's comprehensive history of medical diagnoses,
-#     including the diagnosis name, the specific date it was established,
-#     and the current status of each condition.
-#     """
-
-#     result = run_medical_agent(query)
-#     print(result)

@@ -1,29 +1,42 @@
 
+from medical_agent2 import run_rag_agent
 from medical_agent import run_medical_agent
 from data_ingestion import DataIngestion
 
 def main():
     # file_path = "data/pdf/85jkr_harrypotter_1.pdf"
-    file_path = "data/text_files/froster.txt"
+    # file_path = "data/text_files/froster.txt"
+    file_path = "data/pdf/froster.pdf"
 
     # 1. Data ingestion
     # data_ingestion = DataIngestion(file_path)
     # data_ingestion.run_data_ingestion_pipeline()
 
     # 2. Retrieval Pipeline using Agent tool calls
-    query = """
-    You are clinical experts who review the given patient infromation give below as a context. Your task is to extract a list of all major or chronic medical conditions mentioned in the given patient infromations and need to find dates of the medical conditions from when it detected and calculate the proper dates in formats and from when it was cleaned up or still it is on going.
-
-    For each condition, provide:
-    - key: The name of the condition (e.g., IBS, Depression, Diabetes)
-    - value: A brief reason, context, or supporting detail
-    - start_date: The start date of the condition mention in the patient information
-    - end_date: The end date of the condition mention in the patient information
-    - status: ongoing or cleaned up
+    user_query = """
+    Retrieve the patient's comprehensive history of medical diagnoses,
+    including the diagnosis name, the specific date it was established,
+    and the current status of each condition.
     """
 
-    result = run_medical_agent(query, file_number=4001)
-    print(result)
+    final_query = f"""
+    USER QUESTION:
+    {user_query}
+
+    PATIENT FILE PATH:
+    {file_path}
+    """
+
+    # Agent that create vector query and fetch the relevant information from the vector database.
+    # and feed that information to the LLM to extract the relevant information.
+    result = run_medical_agent(final_query, file_number=4001)
+    # print(result)
+
+    # Agent that create vector query and fetch the relevant information from the vector database.
+    # patient_info = run_rag_agent(final_query, file_number=4001)
+    print("======= Patient Information =======")
+    print(f"Raw agent output: {result}")
+    print("===================================")
 
 if __name__ == "__main__":
     main()

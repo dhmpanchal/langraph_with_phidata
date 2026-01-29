@@ -19,8 +19,8 @@ class DataIngestion:
 
     def run_data_ingestion_pipeline(self):
         # load document
-        # docs = self.load_document_pdf()
-        docs = self.load_document_text()
+        docs = self.load_document_pdf()
+        # docs = self.load_document_text()
 
         # create vectorization
         success, message = self.vector_helper.create_vectorization_from_documents(docs)
