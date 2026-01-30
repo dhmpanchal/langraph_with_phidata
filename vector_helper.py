@@ -5,6 +5,8 @@ from langchain_community.vectorstores.pgvector import PGVector
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 import db_helper
 from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_core.documents import Document
+from medical_category_agent import MedicalCategoryAgent
 import dotenv
 dotenv.load_dotenv()
 
@@ -25,6 +27,7 @@ class VectorHelper:
             connection_string=self.connection_string,
             collection_name="embeddings"
         )
+        self.category_agent = MedicalCategoryAgent()
     
     def create_vectorization(
         self,
@@ -77,7 +80,7 @@ class VectorHelper:
     def create_vectorization_from_documents(
         self,
         documents: list,
-        chunk_size: int = 500,
+        chunk_size: int = 300,
         chunk_overlap: int = 100
     ):
         """
@@ -88,29 +91,18 @@ class VectorHelper:
         print(f"start creating chunks...")
         db_helper.ensure_pgvector_extension()
 
-        # Verify AWS credentials are available (avoid empty embeddings)
-        # session_creds = boto3.Session(region_name=aws_region).get_credentials()
-        # if session_creds is None:
-        #     raise RuntimeError(
-        #         "AWS credentials not found. Configure AWS_ACCESS_KEY_ID/SECRET, or an IAM role/profile."
-        #     )
-
-        # Health check: ensure embedder returns a non-empty vector
-        # try:
-        #     probe = self.embeddings.embed_query("healthcheck") or []
-        # except Exception as exc:
-        #     raise RuntimeError(f"Bedrock embeddings failed: {exc}") from exc
-        # if not probe or len(probe) == 0:
-        #     raise RuntimeError(
-        #         "Bedrock embeddings returned an empty vector. Verify model access and credentials."
-        #     )
-
         text_splitter = RecursiveCharacterTextSplitter(
             chunk_size=chunk_size,
             chunk_overlap=chunk_overlap,
         )
 
         documents = text_splitter.split_documents(documents)
+
+        # for doc in documents:
+        #     category = self.category_agent.classify_chunk(doc.page_content)
+        #     doc.metadata["category"] = category
+
+        # print("Categories assigned:", [doc.metadata["category"] for doc in documents])
 
         self.vectorstore.add_documents(documents)
 
@@ -123,3 +115,11 @@ class VectorHelper:
         Returns a list of documents most similar to the query.
         """
         return self.vectorstore.similarity_search(query, k=k, filter=filter)
+
+    def search_with_cosine_similarity(self, query: str, k: int = 5, filter: dict = None):
+        """
+        Search the knowledge base for the given query.
+
+        Returns a list of documents most similar to the query.
+        """
+        return self.vectorstore.similarity_search_with_score(query, k=k, filter=filter)

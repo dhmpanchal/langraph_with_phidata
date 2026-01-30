@@ -29,13 +29,13 @@ def main():
 
     # Agent that create vector query and fetch the relevant information from the vector database.
     # and feed that information to the LLM to extract the relevant information.
-    result = run_medical_agent(final_query, file_number=4001)
+    # result = run_medical_agent(final_query, file_number=4001)
     # print(result)
 
     # Agent that create vector query and fetch the relevant information from the vector database.
-    # patient_info = run_rag_agent(final_query, file_number=4001)
-    print("======= Patient Information =======")
-    print(f"Raw agent output: {result}")
+    final_output = run_rag_agent(final_query, file_number=4001)
+    print("======= Final Output =======")
+    print(f"Raw agent output: {final_output}")
     print("===================================")
 
 if __name__ == "__main__":
