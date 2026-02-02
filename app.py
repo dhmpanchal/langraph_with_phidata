@@ -1,4 +1,6 @@
 
+from medica_agent3 import run_task_chain
+from medica_agent3 import run_retrieval_agent
 from medical_agent2 import run_rag_agent
 from medical_agent import run_medical_agent
 from data_ingestion import DataIngestion
@@ -14,9 +16,7 @@ def main():
 
     # 2. Retrieval Pipeline using Agent tool calls
     user_query = """
-    Retrieve the patient's comprehensive history of medical diagnoses,
-    including the diagnosis name, the specific date it was established,
-    and the current status of each condition.
+    Extract a list of all major or chronic medical conditions mentioned in the given patient infromations and need to find dates of the medical conditions from when it detected and calculate the proper dates in formats and from when it was cleaned up or still it is on going.
     """
 
     final_query = f"""
@@ -33,10 +33,20 @@ def main():
     # print(result)
 
     # Agent that create vector query and fetch the relevant information from the vector database.
-    final_output = run_rag_agent(final_query, file_number=4001)
-    print("======= Final Output =======")
-    print(f"Raw agent output: {final_output}")
+    # final_output = run_rag_agent(final_query, file_number=4001)
+    # print("======= Final Output =======")
+    # print(f"Raw agent output: {final_output}")
+    # print("===================================")
+
+    patient_info = run_retrieval_agent(final_query, file_path)
+    print("======= Patient Information =======")
+    print(patient_info.strip())
     print("===================================")
+
+    result = run_task_chain(patient_info.strip())
+    print("======= Task Chain Result =======")
+    print(result)
+    print("===================================") 
 
 if __name__ == "__main__":
     main()

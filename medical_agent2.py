@@ -12,7 +12,7 @@ using:
 # ==========================
 # Imports
 # ==========================
-from typing import List
+from typing import List, Any
 from langchain_openai import ChatOpenAI
 from langchain_community.tools import Tool
 from langchain_core.prompts import ChatPromptTemplate, PromptTemplate
@@ -21,7 +21,7 @@ from langchain.agents import create_agent
 from langchain.tools import tool
 from langchain.messages import SystemMessage, HumanMessage
 from langchain_core.output_parsers import JsonOutputParser
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 from langchain_core.runnables import RunnableConfig
 from langchain_core.output_parsers import PydanticOutputParser
 
@@ -43,8 +43,21 @@ TOP_K = 1000
 # Pydantic Models
 # ==========================
 class PatientSearchInput(BaseModel):
-    query: str = Field(description="Medical question or search query")
+    query: list[str] = Field(description="Medical question or search queries")
     file_path: str = Field(description="Exact file path of the patient document to search")
+
+    @field_validator("query", mode="before")
+    @classmethod
+    def parse_query_list(cls, v: Any) -> Any:
+        if isinstance(v, str):
+            try:
+                import json
+                # Handle cases like '["q1", "q2"]'
+                return json.loads(v)
+            except (json.JSONDecodeError, TypeError):
+                # If it's a single string, wrap it in a list
+                return [v]
+        return v
 
 class MajorConditions(BaseModel):
     key: str = Field(description="The name of the condition (e.g., IBS, Depression, Diabetes)")
@@ -64,8 +77,15 @@ llm = ChatOpenAI(
     model="llama3.2",
     base_url="http://localhost:11434/v1",  # Ollama endpoint
     api_key="ollama",
-    temperature=0
+    temperature=0.3,
 )
+
+# llm = ChatOpenAI(
+#     model="gpt-4o-mini",
+#     api_key=os.getenv("OPENAI_API_KEY"),
+#     temperature=0.3,
+#     max_tokens=1000
+# )
 
 # ==========================
 # Vector Store (PGVector)
@@ -75,28 +95,42 @@ vectorstore = VectorHelper()
 # ==========================
 # RAG Tool (Retrieval)
 # ==========================
+def deduplicate_chunks(chunks: list[str]) -> str:
+    seen = set()
+    unique_chunks = []
+
+    if not chunks:
+        return ""
+
+    for chunk in chunks:
+        clean_chunk = chunk.strip()
+        if clean_chunk and clean_chunk not in seen:
+            seen.add(clean_chunk)
+            unique_chunks.append(clean_chunk)
+
+    return "\n\n".join(unique_chunks)
+
 @tool("patient_document_search", description="Retrieve patient information regarding the all medical history",args_schema=PatientSearchInput)
 def rag_patient_retrieval(query: list, file_path: str) -> str:
     """
     Retrieve patient information from PGVector
     """
     similarity_threshold = 0.8
-    docs = vectorstore.search_with_cosine_similarity(query[0], k=TOP_K, filter={"source": file_path})
-    print(f"file_path: {file_path}")
+    all_chunks = []
+
     print(f"Retrieval Query: {query}")
-    print(f"Found {len(docs)} documents for query.")
-    
-    if not docs:
-        return ""
+    print(f"file_path: {file_path}")
 
-    filtered_docs = []
-    for doc, score in docs:
-        # logger.error(f"Chunk has score {score:.4f}")
-        if score is not None and score >= similarity_threshold:
-            print(f"Chunk has score {score:.2f}")
-            filtered_docs.append(doc)
+    for q in query:
+        docs = vectorstore.search_with_cosine_similarity(q, k=TOP_K, filter={"source": file_path})
+        print(f"Found {len(docs)} documents for query: {q}")
+        
+        for doc, score in docs:
+            if score is not None and score >= similarity_threshold:
+                all_chunks.append(doc.page_content)
 
-    return "\n\n".join(doc.page_content for doc in filtered_docs)
+    final_context = deduplicate_chunks(all_chunks)
+    return final_context
 
 tools = [rag_patient_retrieval]
 parser = PydanticOutputParser(pydantic_object=DiagnosisExtraction)
@@ -105,84 +139,28 @@ parser = PydanticOutputParser(pydantic_object=DiagnosisExtraction)
 # Agent Prompt (Decision Only)
 # ==========================
 agent_system_prompt = SystemMessage(
-    content="""
-You are a medical retrieval and reasoning agent.
+    content=f"""
+You are an expert medical reasoning assistant. Your goal is to extract active diagnoses and chronic medical conditions from the patient's medical record.
 
-Your job is to answer the user’s medical question by retrieving information from a patient document using the tool patient_document_search.
+WORKFLOW:
+1. Generate up to 3 focused semantic search queries to find the patient's medical history and active conditions.
+2. Call the 'patient_document_search' tool with these query and the provided 'file_path'.
+    - query = your generated semantic search list of queries as an array like : ["query 1","query 2","query 3"]. Need to create maximum 3 queries only and all the queries are unique and relevent to the user request.
+    - file_path = the patient document path provided in the conversation context
+3. Based ONLY on the retrieved context, extract all major or chronic medical conditions.
 
-You MUST follow this retrieval workflow EXACTLY:
+For each condition, provide:
+- key: name of the condition
+- value: specific supporting detail or symptom from context
+- start_date: original diagnosis date (MM-DD-YYYY) or "Unknown"
+- end_date: resolution date or "ongoing"
+- status: "ongoing" or "cleaned up"
 
-RETRIEVAL WORKFLOW
+{parser.get_format_instructions()}
 
-Step 1 — Query Generation
-• Read the user request carefully
-• Generate a focused semantic multiple search query to retrieve relevant medical information
-• Call the tool patient_document_search with:
-
-query = your generated semantic search list of queries as an array like : ["query 1","query 2","query 3"]. Need to create maximum 3 queries only and all the queries are unique and relevent to the user request.
-file_path = the patient document path provided in the conversation context
-
-Step 2 — Multi-Attempt Retrieval
-You MUST perform retrieval THREE TIMES total.
-
-For each attempt:
-• Reformulate the query differently to capture missing medical context
-• Each query should target different aspects, such as:
-
-diagnoses
-
-chronic conditions
-
-medical history timelines
-
-resolved vs ongoing conditions
-
-You MUST call the tool in all 3 attempts before producing a final answer.
-
-Step 3 — Context Review
-After the 3 tool calls:
-• Collect all returned text chunks
-• Remove duplicate or near-duplicate chunks
-• Merge the remaining unique chunks into ONE combined context block
-
-Do NOT answer before all 3 retrieval attempts are completed.
-
-REASONING TASK
-
-You are given patient medical context. From this, extract ALL major or chronic medical conditions.
-
-For each condition identify:
-• key — Condition name
-• value — Short supporting detail from context
-• start_date — When condition was first noted (MM-DD-YYYY)
-• end_date — When resolved OR "ongoing"
-• status — "ongoing" or "cleaned up"
-
-If a date is unclear, infer cautiously from the context. Do NOT invent facts.
-
-OUTPUT FORMAT (STRICT)
-
-Return ONLY valid JSON in this exact format:
-
-{
-"major_conditions": [
-{
-"key": "Condition Name",
-"value": "Brief reason or supporting detail",
-"start_date": "MM-DD-YYYY",
-"end_date": "MM-DD-YYYY or ongoing",
-"status": "ongoing or cleaned up"
-}
-]
-}
-
-If no conditions are found:
-
-{
-"major_conditions": []
-}
-
-Do NOT include explanations, markdown, notes, or extra text. ONLY output JSON.
+IMPORTANT:
+- If no conditions are found, return an empty list for 'major_conditions'.
+- Maintain strict JSON format. No conversational filler or markdown outside the JSON block.
 """
 )
 
@@ -193,7 +171,6 @@ rag_agent = create_agent(
     model=llm,
     tools=tools,
     system_prompt=agent_system_prompt,
-    
 )
 
 # ==========================
@@ -221,17 +198,19 @@ def run_rag_agent(user_query: str, file_number: int):
 
     # Step 3: Parse the content into the Pydantic model
     try:
-        # Using JsonOutputParser to handle possible markdown wrapper or extra text
-        parsed_json = parser.parse(last_message)
-        return parsed_json
+        # Attempt direct parsing
+        return parser.parse(last_message)
     except Exception as e:
-        print(f"Error parsing agent output to Pydantic: {e}")
-        # Attempt to find JSON in the string if direct parsing fails
+        print(f"Primary parsing failed: {e}. Attempting regex recovery...")
+        # Attempt to find JSON in the string
         json_match = re.search(r'\{.*\}', last_message, re.DOTALL)
         if json_match:
             try:
-                parsed_json = parser.parse(json_match.group())
-                return DiagnosisExtraction(**parsed_json)
-            except:
-                pass
+                # Use standard json parse if pydantic parser is too strict on the fragment
+                import json
+                data = json.loads(json_match.group())
+                return DiagnosisExtraction(**data)
+            except Exception as e2:
+                print(f"Regex recovery failed: {e2}")
+        
         return last_message
