@@ -24,21 +24,22 @@ TOP_K = 1000
 vectorstore = VectorHelper()
 
 class PatientSearchInput(BaseModel):
-    query: list[str] = Field(description="Medical question or search queries")
+    query: str = Field(description="Medical question or search query")
+    # query: list[str] = Field(description="Medical question or search queries")
     file_path: str = Field(description="Exact file path of the patient document to search")
 
-    @field_validator("query", mode="before")
-    @classmethod
-    def parse_query_list(cls, v: Any) -> Any:
-        if isinstance(v, str):
-            try:
-                import json
-                # Handle cases like '["q1", "q2"]'
-                return json.loads(v)
-            except (json.JSONDecodeError, TypeError):
-                # If it's a single string, wrap it in a list
-                return [v]
-        return v
+    # @field_validator("query", mode="before")
+    # @classmethod
+    # def parse_query_list(cls, v: Any) -> Any:
+    #     if isinstance(v, str):
+    #         try:
+    #             import json
+    #             # Handle cases like '["q1", "q2"]'
+    #             return json.loads(v)
+    #         except (json.JSONDecodeError, TypeError):
+    #             # If it's a single string, wrap it in a list
+    #             return [v]
+    #     return v
 
 class MajorConditions(BaseModel):
     key: str = Field(description="The name of the condition (e.g., IBS, Depression, Diabetes)")
@@ -59,11 +60,11 @@ rag_llm = ChatOpenAI(
 )
 
 task_llm = ChatOpenAI(
-    model="llama3.2",
+    model="llama3.1",
     base_url="http://localhost:11434/v1",  # Ollama endpoint
     api_key="ollama",
     temperature=0.3,
-    max_tokens=1000,
+    max_tokens=2500,
     model_kwargs={
         "response_format": {"type": "json_object"}
     }
@@ -85,7 +86,7 @@ def deduplicate_chunks(chunks: list[str]) -> str:
     return "\n\n".join(unique_chunks)
 
 @tool("patient_document_search", description="Retrieve patient information regarding the all medical history",args_schema=PatientSearchInput, return_direct=True)
-def rag_patient_retrieval(query: list, file_path: str) -> str:
+def rag_patient_retrieval(query: str, file_path: str) -> str:
     """
     Retrieve patient information from PGVector
     """
@@ -95,26 +96,46 @@ def rag_patient_retrieval(query: list, file_path: str) -> str:
     print(f"Retrieval Query: {query}")
     print(f"file_path: {file_path}")
 
-    for q in query:
-        docs = vectorstore.search_with_cosine_similarity(q, k=TOP_K, filter={"source": file_path})
-        print(f"Found {len(docs)} documents for query: {q}")
+    # for q in query:
+    docs = vectorstore.search_with_cosine_similarity(query, k=TOP_K, filter={"source": file_path})
+    print(f"Found {len(docs)} documents for query: {query}")
         
-        for doc, score in docs:
-            if score is not None and score >= similarity_threshold:
-                all_chunks.append(doc.page_content)
+    for doc, score in docs:
+        if score is not None and score >= similarity_threshold:
+            all_chunks.append(doc)
 
-    final_context = deduplicate_chunks(all_chunks)
+    # final_context = deduplicate_chunks(all_chunks)
+    final_context = "\n\n".join([chunk.page_content for chunk in all_chunks])
     return final_context
 
 tools = [rag_patient_retrieval]
+
+# agent_system_prompt = SystemMessage(
+#     content="""
+# You are a retrieval-only agent.
+
+# Your task:
+# - Read the user request carefully
+# - Generate a focused semantic multiple search query to retrieve relevant medical information
+# - Call the tool patient_document_search with:
+#     - query = your generated semantic search list of queries as an array like : ["query 1","query 2","query 3"]. Need to create maximum 3 queries only and all the queries are unique and relevent to the user request.
+#     - file_path = the patient document path provided in the conversation context
+# - DO NOT analyze or summarize results
+
+# The tool output will be returned directly.
+# """
+# )
 
 agent_system_prompt = SystemMessage(
     content="""
 You are a retrieval-only agent.
 
 Your task:
-- Generate up to 3 semantic search queries
-- Call `patient_document_search`
+- Read the user request carefully
+- Generate a focused semantic search query to retrieve relevant medical information
+- Call the tool patient_document_search with:
+    - query = your generated semantic search query 
+    - file_path = the patient document path provided in the conversation context
 - DO NOT analyze or summarize results
 
 The tool output will be returned directly.
@@ -160,7 +181,13 @@ def run_task_chain(patient_info: str, file_number: int = 4002):
         - status: ongoing or cleaned up
 
         Return the output strictly following these format instructions:  
-        {format_instructions}
+        {{
+        "major_conditions": [
+            {{"key": "Condition Name", "value": "Supporting detail or reason","start_date":"MM-DD-YYYY","end_date":"MM-DD-YYYY","status":"ongoing/cleaned up"}},
+            {{"key": "Condition Name", "value": "Supporting detail or reason","start_date":"MM-DD-YYYY","end_date":"MM-DD-YYYY","status":"ongoing/cleaned up"}},
+            ...
+        ]
+        }}
 
         If no major conditions are found:
         {{
@@ -172,15 +199,16 @@ def run_task_chain(patient_info: str, file_number: int = 4002):
 
         Ensure that the output is strictly in JSON format without any additional text.
     """
-    parser = PydanticOutputParser(pydantic_object=DiagnosisExtraction)
-    format_instructions = parser.get_format_instructions()
-    task_llm.bind(format_instructions=format_instructions)
+    parser = JsonOutputParser()
+    # parser = PydanticOutputParser(pydantic_object=DiagnosisExtraction)
+    # format_instructions = parser.get_format_instructions()
+    # task_llm.bind(format_instructions=format_instructions)
 
     prompt = ChatPromptTemplate.from_template(TASK_PROMPT)
-    chain = prompt | task_llm
+    chain = prompt | task_llm | parser
 
     response_text = chain.invoke(
-        {"patient_info": patient_info, "format_instructions": format_instructions},
+        {"patient_info": patient_info},
         config=RunnableConfig(tags=[f"doc:{file_number}"]),
     )
     return response_text

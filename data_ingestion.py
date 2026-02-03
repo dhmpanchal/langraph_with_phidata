@@ -1,5 +1,5 @@
 from vector_helper import VectorHelper
-from langchain_community.document_loaders import PyPDFLoader, PyMuPDFLoader, TextLoader
+from langchain_community.document_loaders import PyMuPDFLoader, TextLoader, Docx2txtLoader
 from pathlib import Path
 
 class DataIngestion:
@@ -17,10 +17,16 @@ class DataIngestion:
         docs = document.load() 
         return docs
 
+    def load_document_docx(self):
+        document = Docx2txtLoader(file_path=str(Path(self.file_path)))
+        docs = document.load() 
+        return docs
+
     def run_data_ingestion_pipeline(self):
         # load document
         docs = self.load_document_pdf()
         # docs = self.load_document_text()
+        # docs = self.load_document_docx()
 
         # create vectorization
         success, message = self.vector_helper.create_vectorization_from_documents(docs)

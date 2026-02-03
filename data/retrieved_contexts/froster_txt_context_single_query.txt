@@ -1,0 +1,59 @@
+Original text: Serum sodium
+02 Jul 2024	Serum ferritin level (XE24r)	124 ng/ml [15 - 200]	
+	Original text: Serum ferritin 
+Original units: ug/L 
+(NA) - Acceptable, no additional action required 
+Ferritin normal: Absolute iron deficiency 
+unlikely, but cannot be ruled out in patients 
+with significant renal impairment
+02 Jul 2024	Liver function tests (X77WP)		
+	Original text: Liver function test 
+(NA) - Acceptable, no additional action required
+
+Original text: SMS text message sent to patient 
+Hi Madisons parent/guardian 
+Can you please clarify the address at which <first_name> is living as we have a different address to the one on the patches request sent in and need to clarify for referral done. Please respond to this task with correct address 
+TO RESPOND, please follow this link: (link will autogenerate here) 
+Thanks,    
+Moorcroft Medical Centre
+06 Sep 2023	Generalised anxiety disorder (E2002)		
+	First
+
+11 May 2021	Hyoscine butylbromide 10mg tablets	upto 1 tid	10 tablet	A
+11 May 2021	Ventolin 100micrograms/dose Evohaler (GlaxoSmithKline UK Ltd)	2 PUFF(S) FOUR TIMES A DAY (BLUE RELIEVER)	200 dose	A
+02 Jun 2021	Ventolin 100micrograms/dose Evohaler (GlaxoSmithKline UK Ltd)	2 PUFF(S) FOUR TIMES A DAY (BLUE RELIEVER)	400 dose	A
+22 Jun 2021	Volumatic (GlaxoSmithKline UK Ltd)	TO USE WITH INHALER	1 device	A
+
+All questionnaires
+LCHS CiC Admin	06 Feb 2025 11:40
+	Entered by	Josephine Thompson (Clerical Access Role) Entered at: Children In Care Lincolnshire	
+CiC Admin
+	Date child become looked after	17 Feb 2016
+	Placing Authority / ICB 	Staffordshire and Stoke on Trent
+	Was Notification Received at the time of placement into Lincolnshire?	No
+	Is the Child an Unaccompanied Asylum Seeker?	No
+	Is the Child in a Young Offender Institute?	No
+Other new condition	08 Apr 2025 11:36
+
+Alternate Tel.	<phone_number>
+	Previous Home Address	<address>	29 May 2018 - 28 Jan 2025
+Registration Details
+	Usual GP	Dr Philip Williams	Home GP	
+	PDS Registered Practice	Disney Medical Practice (NHS Lincolnshire Icb - 71e) (01522 751717)
+	Usual Branch	Disney Medical Practice (01522 751717)
+
+23 Jul 2024	Gaviscon Advance oral suspension peppermint (Reckitt Benckiser Healthcare (UK) Ltd)	One Or Two 5ml Spoonfuls To Be Taken After Meals And At Bedtime	500 ml	A
+23 Aug 2024	Ensure Plus Juce liquid (Flavour Not Specified)	strawberry and peach flavours, take each once daily	6600 ml	A
+	Ended early on 30 Sep 2024: Other (Medication Course Ended)
+
+10 Mar 2025	Lansoprazole 30mg gastro-resistant capsules	take one once daily	28 capsule	H
+14 Mar 2025	Sertraline 50mg tablets	one a day	28 tablet	
+14 Mar 2025	Cyclizine 50mg tablets	1 tablet three times daily	30 tablet	A
+28 Mar 2025	Cyclizine 50mg tablets	1 tablet three times daily	30 tablet	A
+08 Apr 2025	Sertraline 50mg tablets	one a day	28 tablet	
+11 Apr 2025	Cyclizine 50mg tablets	1 tablet twice a day	30 tablet	A
+	Script notes: can increase to 50 mg up to 3 times a day
+
+03 Feb 2025	Main spoken language English (XaG5t)		
+05 Feb 2025	Administration note (XaIg4)		
+	Email with Notification of Placement Move    -    Received From: MPFT Safeguarding Children - LAC <EMAIL_ADDRESS>    05/02/2025 (see Record Attachments)
